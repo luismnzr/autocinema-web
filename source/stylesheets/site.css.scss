@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'RT Alias Grotesk';
+    src: url('RTAliasGrotesk-Regular.woff2') format('woff2'),
+        url('RTAliasGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RT Alias Grotesk';
+    src: url('RTAliasGrotesk-Light.woff2') format('woff2'),
+        url('RTAliasGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@import 'fullpage';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'RT Alias Grotesk', sans-serif;
+  padding: 18vh 1rem;
+  text-align: center;
+}
+
+.intro-container {
+  &__action {
+    text-transform: uppercase;
+    a {
+      color: #fff;
+      display: block;
+      margin: 1rem 0;
+      text-decoration: none;
+    }
+    p {
+      font-size: 12px;
+      opacity: 0.4;
+    }
+  }
+  &__logo {
+    margin: 3rem 0;
+    img {
+      max-width: 820px;
+    }
+  }
+}
