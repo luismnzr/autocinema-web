@@ -3,30 +3,51 @@ title: Autocinema
 ---
 
 <div id="fullpage">
-	<section class="section">Some section</section>
-	<section class="section active">
+	<section class="section" data-anchor="services">
+		<div class="services">
+			<div class="services-header">
+				<p><a class="services-header__link" href="https://goo.gl/maps/5XpHfCmTRwZj5n4q7">Colima 162, Col. Roma Norte, CDMX</a></p>
+				<p class="services-header__alt"><a class="services-header__link" href="mailto:hola@autocinemaink.com">hola@autocinemaink.com</a></p>
+				<p><a class="services-header__link" href="https://instagram.com/autocinemaink">@autocinemaink</a></p>
+			</div>
+			<div class="services-list">
+				<ul>
+					<li>Publicidad</li>
+					<li>Branded Content</li>
+					<li>Contenido Digital</li>
+					<li>Producciones</li>
+				</ul>
+				<p>Siempre contaremos buenas historias</p>
+			</div>
+			<div class="services-logo">
+				<img src="/images/logo-icon@2x.png" alt="Autocinema Ink">
+			</div>
+		</div>
+	</section>
+	<section class="section active" data-anchor="intro">
     <div class="intro">
       <div class="intro-container">
-        <div class="intro-container__action">
-          <a href="#">Servicios</a>
+        <div class="intro-container__action animated fadeInDown">
+          <a href="#services">Servicios</a>
           <p>Desliza hacia arriba</p>
         </div>
-        <div class="intro-container__logo">
-          <img src="/images/logo.svg" alt="">
+        <div class="intro-container__logo animated fadeIn delay-1s">
+          <img src="/images/logo.svg" alt="Autocinema Ink">
         </div>
-        <div class="intro-container__action">
+        <div class="intro-container__action animated fadeInUp">
           <p>Desliza hacia abajo</p>
           <a href="#">Nuestros Proyectos</a>
         </div>
       </div>
     </div>
   </section>
-	<section class="section">Some section</section>
-	<section class="section">Some section</section>
+	<section class="section" data-anchor="projects">Projects</section>
 </div>
 
 <script type="text/javascript">
-  new fullpage('#fullpage');
+  new fullpage('#fullpage', {
+		licenseKey: 'A19230FC-07774D41-8C64651A-D9360833'
+	});
 
   //methods
   fullpage_api.setAllowScrolling(true);
