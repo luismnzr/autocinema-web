@@ -1,0 +1,43 @@
+<div class="director">
+  <div class="services-header">
+    <p><a class="services-header__link" href="https://goo.gl/maps/5XpHfCmTRwZj5n4q7">Colima 162, Col. Roma Norte, CDMX</a></p>
+    <p class="services-header__alt"><a class="services-header__link" href="mailto:hola@autocinemaink.com">hola@autocinemaink.com</a></p>
+    <p><a class="services-header__link" href="https://instagram.com/autocinemaink">@autocinemaink</a></p>
+  </div>
+  <div class="director-subheader">
+    <h3>David Romay</h3>
+    <a href="/#proyectos">Proyectos</a>
+  </div>
+  <div class="director-grid">
+    <div class="director-grid__item">
+      <video id="video1" src="/images/romay/america.webm"  poster="/images/bg-romay.png"></video>
+    </div>
+    <div class="director-grid__item">
+      <video id="video2" src="/images/romay/land-rover.webm"  poster="/images/romay/cover-land.png"></video>
+    </div>
+    <div class="director-grid__item">
+      <video id="video3" src="/images/romay/prudential.webm"  poster="/images/romay/cover-prudential.png"></video>
+    </div>
+    <div class="director-grid__item">
+      <video id="video4" src="/images/romay/segunda-mano.webm"  poster="/images/romay/cover-segunda.png"></video>
+    </div>
+    <div class="director-grid__item">
+      <video id="video5" src="/images/romay/detras-montana.webm"  poster="/images/romay/cover-montana.png"></video>
+    </div>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  $('#video1, #video2, #video3, #video4, #video5').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
+</script>

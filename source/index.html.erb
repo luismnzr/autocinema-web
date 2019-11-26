@@ -3,7 +3,7 @@ title: Autocinema
 ---
 
 <div id="fullpage">
-	<section class="section" data-anchor="services">
+	<div class="section" data-anchor="servicios">
 		<div class="services">
 			<div class="services-header">
 				<p><a class="services-header__link" href="https://goo.gl/maps/5XpHfCmTRwZj5n4q7">Colima 162, Col. Roma Norte, CDMX</a></p>
@@ -20,11 +20,11 @@ title: Autocinema
 				<p>Siempre contaremos buenas historias</p>
 			</div>
 			<div class="services-logo">
-				<img src="/images/logo-icon@2x.png" alt="Autocinema Ink">
+				<a href="#intro"><img src="/images/logo-icon@2x.png" alt="Autocinema Ink"></a>
 			</div>
 		</div>
-	</section>
-	<section class="section active" data-anchor="intro">
+	</div>
+	<div class="section active" data-anchor="intro">
     <div class="intro">
       <div class="intro-container">
         <div class="intro-container__action animated fadeInDown">
@@ -40,8 +40,30 @@ title: Autocinema
         </div>
       </div>
     </div>
-  </section>
-	<section class="section" data-anchor="projects">Projects</section>
+  </div>
+	<div class="section" data-anchor="proyectos">
+		<div class="projects">
+			<div class="projects-list">
+				<div class="projects-list__row">
+					<ul>
+						<li id="davidRomay"><a href="/david-romay">David Romay</a></li>
+						<li id="alejandroLubezki"><a href="/david-romay">Alejandro Lubezki</a></li>
+						<li id="hariRomay"><a href="/david-romay">Hari Romay</a></li>
+					</ul>
+				</div>
+				<div class="projects-list__row">
+					<ul>
+						<li id="javieraEyzaguirre"><a href="/david-romay">Javiera Eyzaguirre</a></li>
+						<li id="callanGreen"><a href="/david-romay">Callan Green</a></li>
+						<li id="matiasMalet"><a href="/david-romay">Matías Malet</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="projects-logo">
+				<img src="/images/logo-icon@2x.png" alt="Autocinema Ink">
+			</div>
+		</div>
+	</div>
 </div>
 
 <script type="text/javascript">
@@ -51,4 +73,32 @@ title: Autocinema
 
   //methods
   fullpage_api.setAllowScrolling(true);
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("#davidRomay").hover(function(){
+        $('.projects').css("background", "url('./images/bg-romay.png')");
+    });
+		$("#alejandroLubezki").hover(function(){
+				$('.projects').css("background", "url('./images/bg-lubezki.png')");
+		});
+		$("#hariRomay").hover(function(){
+				$('.projects').css("background", "url('./images/bg-hromay.png')");
+		});
+		$("#javieraEyzaguirre").hover(function(){
+        $('.projects').css("background", "url('./images/bg-eyzaguirre.jpg')");
+    });
+		$("#callanGreen").hover(function(){
+				$('.projects').css("background", "url('./images/bg-green.jpg')");
+		});
+		$("#matiasMalet").hover(function(){
+				$('.projects').css("background", "url('./images/bg-malet.jpg')");
+		});
+});
 </script>
