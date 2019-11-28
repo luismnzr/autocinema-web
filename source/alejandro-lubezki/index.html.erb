@@ -5,44 +5,37 @@
     <p><a class="services-header__link" href="https://instagram.com/autocinemaink">@autocinemaink</a></p>
   </div>
   <div class="director-subheader">
-    <h3>David Romay</h3>
+    <h3>Alejandro Lubezki</h3>
     <a href="/#proyectos">Proyectos</a>
   </div>
   <div class="director-grid">
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
-        <h5>Club América</h5>
+        <h5>Una Guia</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video1" class="romay-1" onclick="this.controls=true" src="/images/romay/america.webm" poster="data:image/gif,AAAA"></video>
+      <video id="lubezki1" class="lubezki-1" onclick="this.controls=true" src="/images/lubezki/guia.webm" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
-        <h5>Land Rover</h5>
+        <h5>Es Hora</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video2" class="romay-2" onclick="this.controls=true" src="/images/romay/land-rover.webm"  poster="data:image/gif,AAAA"></video>
+      <video id="lubezki2" class="lubezki-2" onclick="this.controls=true" src="/images/lubezki/es-hora.webm"  poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
-        <h5>Prudential</h5>
+        <h5>Pizzas</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video3" class="romay-3" onclick="this.controls=true" src="/images/romay/prudential.webm" poster="data:image/gif,AAAA"></video>
+      <video id="lubezki3" class="lubezki-3" onclick="this.controls=true" src="/images/lubezki/pizzas.webm" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
-        <h5>Segunda Mano</h5>
+        <h5>Si Yo Fuera</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video4" class="romay-4" onclick="this.controls=true" src="/images/romay/segunda-mano.webm" poster="data:image/gif,AAAA"></video>
-    </div>
-    <div class="director-grid__item">
-      <div class="director-grid__item-hover">
-        <h5>Detrás de la Montaña</h5>
-        <img src="../images/play.svg" alt="">
-      </div>
-      <video id="video5" class="romay-5" onclick="this.controls=true" src="/images/romay/detras-montana.webm" poster="data:image/gif,AAAA"></video>
+      <video id="lubezki4" class="lubezki-4" onclick="this.controls=true" src="/images/lubezki/si-yo-fuera.webm" poster="data:image/gif,AAAA"></video>
     </div>
   </div>
 </div>
@@ -55,31 +48,25 @@
 
 <script type="text/javascript">
   $(document).ready(function(){
-      $('#video1').click(function(){
+      $('#lubezki1').click(function(){
         .setAttribute("poster"," ");
         .css("background","none");
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
          .setAttribute("controls","controls");
       });
-      $('#video2').click(function(){
+      $('#lubezki2').click(function(){
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
          .setAttribute("controls","controls");
          .setAttribute("poster"," ");
          .css("background","none");
       });
-      $('#video3').click(function(){
+      $('#lubezki3').click(function(){
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
          .setAttribute("controls","controls");
          .setAttribute("poster"," ");
          .css("background","none");
       });
-      $('#video4').click(function(){
-         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
-         .setAttribute("controls","controls");
-         .setAttribute("poster"," ");
-         .css("background","none");
-      });
-      $('#video5').click(function(){
+      $('#lubezki4').click(function(){
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
          .setAttribute("controls","controls");
          .setAttribute("poster"," ");

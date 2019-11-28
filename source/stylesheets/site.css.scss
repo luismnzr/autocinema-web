@@ -53,6 +53,15 @@ body {
   }
 }
 
+.about {
+  &-link {
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
 .services {
   align-items: center;
   display: flex;
@@ -83,6 +92,12 @@ body {
     }
   }
   &-list {
+    h3 {
+      font-size: 4rem;
+      font-weight: 300;
+      line-height: 140%;
+      text-align: left;
+    }
     ul {
       color: #fff;
       font-size: 1rem;
@@ -245,6 +260,346 @@ body {
       }
       #video5 {
         background: transparent no-repeat url('../images/romay/cover-montana.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #lubezki1 {
+        background: transparent no-repeat url('../images/lubezki/guia.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #lubezki2 {
+        background: transparent no-repeat url('../images/lubezki/es-hora.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #lubezki3 {
+        background: transparent no-repeat url('../images/lubezki/pizzas.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #lubezki4 {
+        background: transparent no-repeat url('../images/lubezki/si-yo-fuera.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #hari1 {
+        background: transparent no-repeat url('../images/hari/mercedes.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #hari2 {
+        background: transparent no-repeat url('../images/hari/hoteles.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #hari3 {
+        background: transparent no-repeat url('../images/hari/modelo.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #hari4 {
+        background: transparent no-repeat url('../images/hari/modelo2.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #hari5 {
+        background: transparent no-repeat url('../images/hari/modelo3.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #eyzaguirre1 {
+        background: transparent no-repeat url('../images/eyzaguirre/ripley.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #eyzaguirre2 {
+        background: transparent no-repeat url('../images/eyzaguirre/marco-polo.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #eyzaguirre3 {
+        background: transparent no-repeat url('../images/eyzaguirre/jjo.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #eyzaguirre4 {
+        background: transparent no-repeat url('../images/eyzaguirre/ripley2.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #eyzaguirre5 {
+        background: transparent no-repeat url('../images/eyzaguirre/xem.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #green1 {
+        background: transparent no-repeat url('../images/green/bentley.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #green2 {
+        background: transparent no-repeat url('../images/green/tag.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #green3 {
+        background: transparent no-repeat url('../images/green/cadillac.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #green4 {
+        background: transparent no-repeat url('../images/green/mclaren.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #green5 {
+        background: transparent no-repeat url('../images/green/jaguar.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #mejia1 {
+        background: transparent no-repeat url('../images/mejia/crediamigo.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #mejia2 {
+        background: transparent no-repeat url('../images/mejia/pritt.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #mejia3 {
+        background: transparent no-repeat url('../images/mejia/coca.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #mejia4 {
+        background: transparent no-repeat url('../images/mejia/sephora.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #mejia5 {
+        background: transparent no-repeat url('../images/mejia/huggies.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #malet1 {
+        background: transparent no-repeat url('../images/malet/att.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #malet2 {
+        background: transparent no-repeat url('../images/malet/cinepolis.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #malet3 {
+        background: transparent no-repeat url('../images/malet/chevrolet.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #malet4 {
+        background: transparent no-repeat url('../images/malet/cre-c.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #malet5 {
+        background: transparent no-repeat url('../images/malet/quintonil.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #maiola1 {
+        background: transparent no-repeat url('../images/maiola/gillette.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #maiola2 {
+        background: transparent no-repeat url('../images/maiola/honda.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #maiola3 {
+        background: transparent no-repeat url('../images/maiola/bimbo.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #maiola4 {
+        background: transparent no-repeat url('../images/maiola/jgl.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #maiola5 {
+        background: transparent no-repeat url('../images/maiola/origen.png');
         background-size: cover;
         width: 100%;
         background-position: center;
