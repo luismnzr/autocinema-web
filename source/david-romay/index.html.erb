@@ -1,3 +1,7 @@
+---
+title: David Romay | Autocinema Ink
+---
+<a class="mainLink" href="/"><img src="/images/logo-icon@2x.png" alt="Autocinema Ink"></a>
 <div class="director">
   <div class="services-header">
     <p><a class="services-header__link" href="https://goo.gl/maps/5XpHfCmTRwZj5n4q7">Colima 162, Col. Roma Norte, CDMX</a></p>
@@ -6,15 +10,14 @@
   </div>
   <div class="director-subheader">
     <h3>David Romay</h3>
-    <a href="/#proyectos">Proyectos</a>
   </div>
   <div class="director-grid">
     <div class="director-grid__item">
-      <div class="director-grid__item-hover">
+      <div id="video1play" class="director-grid__item-hover">
         <h5>Club América</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video1" class="romay-1" onclick="this.controls=true" src="/images/romay/america.webm" poster="data:image/gif,AAAA"></video>
+      <video id="video1" class="romay-1" onclick="this.controls=true;toggleBg()" src="/images/romay/america.webm" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
@@ -47,31 +50,32 @@
   </div>
 </div>
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+<%= javascript_include_tag "jquery" %>
 
 
-<script type="text/javascript">
+<script>
+
   $(document).ready(function(){
-      $('#video1').click(function(){
-        .setAttribute("poster"," ");
-        .css("background","none");
-         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
-         .setAttribute("controls","controls");
-      });
+    function toggleBg() {
+        .toggleClass("collapsed pressed");
+        .setAttribute("controls","controls");
+        .preventDefault();
+    }
+    toggleBg();
+
+    $('#video1').live('click', function(e){
+       toggleBg();
+    });
+
       $('#video2').click(function(){
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
-         .setAttribute("controls","controls");
-         .setAttribute("poster"," ");
-         .css("background","none");
+         $(this).css("background","none");
       });
       $('#video3').click(function(){
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
          .setAttribute("controls","controls");
          .setAttribute("poster"," ");
-         .css("background","none");
+         $(this).css("background","none");
       });
       $('#video4').click(function(){
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
@@ -85,5 +89,40 @@
          .setAttribute("poster"," ");
          .css("background","none");
       });
+      $("#video1").click(function(){
+        $(this).toggleClass("background-none");
+      });
    });
+
+  $(document).ready(function(){
+
+      $('#video2').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+      $('#video3').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         $(this).css("background","none");
+      });
+      $('#video4').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+      $('#video5').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+      $("#video1").click(function(){
+        $(this).toggleClass("background-none");
+      });
+   });
+
 </script>
