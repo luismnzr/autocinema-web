@@ -162,8 +162,11 @@ body {
 
 .mainLink {
   position: fixed;
-    top: 90%;
-    z-index: 999;
+  top: 90%;
+  z-index: 999;
+  img {
+      height: 40px;
+  }
 }
 
 .director {
@@ -236,6 +239,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus,
         &:active {
           background: none !important;
@@ -247,6 +251,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -257,6 +262,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -267,6 +273,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -277,6 +284,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -287,6 +295,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -297,6 +306,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -307,6 +317,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -317,6 +328,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -327,6 +339,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -337,6 +350,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -347,6 +361,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -357,6 +372,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -367,6 +383,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -377,6 +394,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -387,6 +405,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -397,6 +416,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -407,6 +427,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -417,6 +438,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -427,6 +449,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -437,6 +460,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -447,6 +471,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -457,6 +482,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -467,6 +493,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -477,6 +504,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -487,6 +515,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -497,6 +526,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -507,6 +537,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -517,6 +548,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -527,6 +559,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -537,6 +570,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -547,6 +581,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -557,6 +592,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -567,6 +603,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -577,6 +614,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -587,6 +625,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -597,6 +636,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -607,6 +647,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -617,6 +658,7 @@ body {
         background-size: cover;
         width: 100%;
         background-position: center;
+        object-fit: cover;
         &:focus {
           background: none !important;
           outline: none;
@@ -628,4 +670,28 @@ body {
 
 .director-grid__item:hover .director-grid__item-hover {
   display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .services-header {
+    flex-direction: column;
+  }
+  .services-header__alt {
+    position: relative;
+    left: auto;
+  }
+  .services-list h3 {
+    font-size: 2rem;
+    span a {
+      font-size: 1rem;
+    }
+  }
+  .director-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  .director-subheader {
+    justify-content: center;
+    padding-left: 0;
+  }
 }
