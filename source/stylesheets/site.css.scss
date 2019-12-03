@@ -257,6 +257,7 @@ body {
   position: fixed;
   top: 90%;
   z-index: 999;
+  transform: translateX(-50%);
   img {
       height: 40px;
   }
@@ -774,9 +775,9 @@ body {
     left: auto;
   }
   .services-list h3 {
-    font-size: 2rem;
+      font-size: 6.5vw;
     span a {
-      font-size: 1rem;
+      font-size: .8rem;
     }
   }
   .director-grid {
