@@ -17,35 +17,42 @@ title: David Romay | Autocinema Ink
         <h5>Club América</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video1" class="romay-1" onclick="this.controls=true;this.poster=false" src="/images/romay/america-comp.m4v" poster="data:image/gif,AAAA"></video>
+      <video id="video1" class="romay-1" onclick="this.controls=true;this.poster=false" src="https://player.vimeo.com/external/376977396.hd.mp4?s=167a1297ace8d9ae32f729ed91fe3bcd506c7dbe&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Land Rover</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video2" class="romay-2" onclick="this.controls=true" src="/images/romay/rover-comp.webm"  poster="data:image/gif,AAAA"></video>
+      <video id="video2" class="romay-2" onclick="this.controls=true" src="https://player.vimeo.com/external/376977668.hd.mp4?s=8cb5626ae2b64e17c470e33864226d012a5b1aae&profile_id=174"  poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Prudential</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video3" class="romay-3" onclick="this.controls=true" src="/images/romay/prudential-comp.webm" poster="data:image/gif,AAAA"></video>
+      <video id="video3" class="romay-3" onclick="this.controls=true" src="https://player.vimeo.com/external/376977991.hd.mp4?s=ac9abb70c3104a536c07eb67d41979ac544a451b&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Segunda Mano</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video4" class="romay-4" onclick="this.controls=true" src="/images/romay/segunda-comp.webm" poster="data:image/gif,AAAA"></video>
+      <video id="video4" class="romay-4" onclick="this.controls=true" src="https://player.vimeo.com/external/376979374.hd.mp4?s=4a3374bc89c71779b219d59da608bd15591f5bbc&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Detrás de la Montaña</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="video5" class="romay-5" onclick="this.controls=true" src="/images/romay/montana-comp.webm" poster="data:image/gif,AAAA"></video>
+      <video id="video5" class="romay-5" onclick="this.controls=true" src="https://player.vimeo.com/external/376979437.hd.mp4?s=99830c487c5d6d412fb9437d5d1ba5785d3750b8&profile_id=174" poster="data:image/gif,AAAA"></video>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>HSBC</h5>
+        <img src="../images/play.svg" alt="">
+      </div>
+      <video id="video6" class="romay-6" onclick="this.controls=true" src="https://player.vimeo.com/external/376977648.hd.mp4?s=cb023cbdf0b8b9907eb4b00cdaae5884c91b7f7b&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
   </div>
 </div>
@@ -84,6 +91,12 @@ title: David Romay | Autocinema Ink
          .css("background","none");
       });
       $('#video5').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+      $('#video6').click(function(){
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
          .setAttribute("controls","controls");
          .setAttribute("poster"," ");

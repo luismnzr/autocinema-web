@@ -30,7 +30,6 @@ body {
   text-align: center;
 }
 
-.cls-1{fill:#f37317;}
 
 .intro-container {
   &__action {
@@ -49,101 +48,53 @@ body {
   }
   &__logo {
     margin: 3rem 0;
-
+    img {
+      max-width: 80vw;
+    }
   }
 }
 
-#logo {
-  max-width: 80vw;
-  stroke: rgb(243, 115, 23);
-  path:nth-child(1) {
-    stroke-dasharray: 61;
-    stroke-dashoffset: 61;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(2) {
-    stroke-dasharray: 174;
-    stroke-dashoffset: 174;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(3) {
-    stroke-dasharray: 141;
-    stroke-dashoffset: 141;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(4) {
-    stroke-dasharray: 765;
-    stroke-dashoffset: 765;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(5) {
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(6) {
-    stroke-dasharray: 397;
-    stroke-dashoffset: 397;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(7) {
-    stroke-dasharray: 995;
-    stroke-dashoffset: 995;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(8) {
-    stroke-dasharray: 559;
-    stroke-dashoffset: 559;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(9) {
-    stroke-dasharray: 1399;
-    stroke-dashoffset: 1399;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(10) {
-    stroke-dasharray: 766;
-    stroke-dashoffset: 766;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(11) {
-    stroke-dasharray: 781;
-    stroke-dashoffset: 781;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(12) {
-    stroke-dasharray: 786;
-    stroke-dashoffset: 786;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
-  }
-  path:nth-child(13) {
-    stroke-dasharray: 691;
-    stroke-dashoffset: 691;
-    animation: line-anim 3s ease forwards;
-    animation-delay: 1s;
+.word-spin {
+  margin-top:0;
+  text-align:center;
+  list-style:none;
+  line-height: 120%;
+  &:hover {
+    animation:1s ease 0s normal none infinite change;
+    -webkit-animation:1s ease 0s normal none infinite change;
+    -moz-animation:1s ease 0s normal none infinite change;
+    -o-animation:1s ease 0s normal none infinite change;
   }
 }
 
-@keyframes line-anim {
-  from {
-    fill: rgba(243, 115, 23,0);
+.word-spin2 {
+  margin-top:-35px;
+  text-align:center;
+  list-style:none infinite;
+  line-height: 120%;
+  &:hover {
+    animation:1s ease 0s normal none infinite change2;
+    -webkit-animation:1s ease 0s normal none infinite change2;
+    -moz-animation:1s ease 0s normal none infinite change2;
+    -o-animation:1s ease 0s normal none infinite change2;
   }
-  to {
-    fill: rgba(243, 115, 23,1);
-    stroke-dashoffset:0;
-  }
+}
+
+.visible {
+  overflow:hidden;
+  height: 40px;
+}
+
+@keyframes change {
+  0%   {margin-top:0;}
+  50%  {margin-top:-35px;}
+  100% {margin-top:-35px;}
+}
+
+@keyframes change2 {
+  0%   {margin-top:-35px;}
+  50%  {margin-top:0;}
+  100% {margin-top:0;}
 }
 
 .about {
@@ -375,6 +326,17 @@ body {
       }
       #video5 {
         background: transparent no-repeat url('../images/romay/cover-montana.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #video6 {
+        background: transparent no-repeat url('../images/romay/hsbc.png');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -627,7 +589,7 @@ body {
         }
       }
       #mejia4 {
-        background: transparent no-repeat url('../images/mejia/sephora.png');
+        background: transparent no-repeat url('../images/mejia/pullups.png');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -693,7 +655,7 @@ body {
         }
       }
       #malet5 {
-        background: transparent no-repeat url('../images/malet/quintonil.png');
+        background: transparent no-repeat url('../images/malet/eos.png');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -715,7 +677,7 @@ body {
         }
       }
       #maiola2 {
-        background: transparent no-repeat url('../images/maiola/honda.png');
+        background: transparent no-repeat url('../images/maiola/funmodelo.png');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -749,6 +711,17 @@ body {
       }
       #maiola5 {
         background: transparent no-repeat url('../images/maiola/origen.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #maiola5 {
+        background: transparent no-repeat url('../images/maiola/telcel.png');
         background-size: cover;
         width: 100%;
         background-position: center;

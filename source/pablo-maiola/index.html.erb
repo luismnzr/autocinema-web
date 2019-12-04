@@ -17,35 +17,42 @@ title: Pablo Maiola | Autocinema Ink
         <h5>Gillette</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="maiola1" class="maiola-1" onclick="this.controls=true" src="/images/maiola/gillette.webm" poster="data:image/gif,AAAA"></video>
+      <video id="maiola1" class="maiola-1" onclick="this.controls=true" src="https://player.vimeo.com/external/376985754.hd.mp4?s=cc0e5c0f6fc9fd57de2877806fe95122d107d41f&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
-        <h5>Honda</h5>
+        <h5>Funcación Modelo</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="maiola2" class="maiola-2" onclick="this.controls=true" src="/images/maiola/honda.webm"  poster="data:image/gif,AAAA"></video>
+      <video id="maiola2" class="maiola-2" onclick="this.controls=true" src="https://player.vimeo.com/external/376980059.hd.mp4?s=19fd1f54fdb0910a43a19d28a2229ee91ae613e1&profile_id=174"  poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Bimbo</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="maiola3" class="maiola-3" onclick="this.controls=true" src="/images/maiola/bimbo.webm" poster="data:image/gif,AAAA"></video>
+      <video id="maiola3" class="maiola-3" onclick="this.controls=true" src="https://player.vimeo.com/external/376980044.hd.mp4?s=78c51c6f4d81eea7dff70b3af93ba3b16061ed6d&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>JGL</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="maiola4" class="maiola-4" onclick="this.controls=true" src="/images/maiola/jgl.webm" poster="data:image/gif,AAAA"></video>
+      <video id="maiola4" class="maiola-4" onclick="this.controls=true" src="https://player.vimeo.com/external/376980079.hd.mp4?s=e3c8b35f8a3f0e06847877c7ea9620f1fc20d1c8&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Funcación Origen</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="maiola5" class="maiola-5" onclick="this.controls=true" src="/images/maiola/origen.webm" poster="data:image/gif,AAAA"></video>
+      <video id="maiola5" class="maiola-5" onclick="this.controls=true" src="https://player.vimeo.com/external/376980117.hd.mp4?s=ff35b4b5bf94e829388dbff2cbbf398b3db64d38&profile_id=174" poster="data:image/gif,AAAA"></video>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Telcel</h5>
+        <img src="../images/play.svg" alt="">
+      </div>
+      <video id="maiola6" class="maiola-6" onclick="this.controls=true" src="https://player.vimeo.com/external/376985768.hd.mp4?s=63c7298d380bac54c5f516f612189d1d03543927&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
   </div>
 </div>
@@ -83,6 +90,12 @@ title: Pablo Maiola | Autocinema Ink
          .css("background","none");
       });
       $('#maiola5').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+      $('#maiola6').click(function(){
          $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
          .setAttribute("controls","controls");
          .setAttribute("poster"," ");
