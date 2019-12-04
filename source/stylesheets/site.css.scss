@@ -30,6 +30,24 @@ body {
   text-align: center;
 }
 
+@mixin anim-filter($filter, $value) {
+    -webkit-filter: #{$filter}unquote("(#{$value})");
+      -moz-filter: #{$filter}unquote("(#{$value})");
+      -ms-filter: #{$filter}unquote("(#{$value})");
+      filter: #{$filter}unquote("(#{$value})");
+}
+@mixin anim-transition($property, $value) {
+  -webkit-transition: $property, $value;
+      -moz-transition: $property, $value;
+      -ms-transition: $property, $value;
+      transition: $property, $value;
+}
+@mixin anim-transform($property, $value) {
+    -webkit-transform:  #{$property}unquote("(#{$value})");
+      -moz-transform: #{$property}unquote("(#{$value})");
+      -ms-transform: #{$property}unquote("(#{$value})");
+      transform: #{$property}unquote("(#{$value})");
+}
 
 .intro-container {
   &__action {
@@ -48,7 +66,7 @@ body {
   }
   &__logo {
     margin: 3rem 0;
-    img {
+    svg {
       max-width: 80vw;
     }
   }
@@ -95,6 +113,85 @@ body {
   0%   {margin-top:-35px;}
   50%  {margin-top:0;}
   100% {margin-top:0;}
+}
+
+path {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.one {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.two {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.three {
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.four {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.five {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.six {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.seven {
+  -webkit-animation-delay: 2.1s;
+  -moz-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+.eight {
+  -webkit-animation-delay: 2.4s;
+  -moz-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
+.nine {
+  -webkit-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+
+.ten {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.eleven {
+  -webkit-animation-delay: 3.1s;
+  -moz-animation-delay: 3.1s;
+  animation-delay: 3.1s;
 }
 
 .about {
@@ -162,6 +259,7 @@ body {
 
 .projects {
   align-items: center;
+  background: url('../images/bg-romay.gif');
   background-size: cover !important;
   background-position: center !important;
   display: flex;
