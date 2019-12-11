@@ -68,51 +68,9 @@ body {
     margin: 3rem 0;
     svg {
       max-width: 80vw;
+      margin-bottom: 2rem;
     }
   }
-}
-
-.word-spin {
-  margin-top:0;
-  text-align:center;
-  list-style:none;
-  line-height: 120%;
-  &:hover {
-    animation:1s ease 0s normal none infinite change;
-    -webkit-animation:1s ease 0s normal none infinite change;
-    -moz-animation:1s ease 0s normal none infinite change;
-    -o-animation:1s ease 0s normal none infinite change;
-  }
-}
-
-.word-spin2 {
-  margin-top:-35px;
-  text-align:center;
-  list-style:none infinite;
-  line-height: 120%;
-  &:hover {
-    animation:1s ease 0s normal none infinite change2;
-    -webkit-animation:1s ease 0s normal none infinite change2;
-    -moz-animation:1s ease 0s normal none infinite change2;
-    -o-animation:1s ease 0s normal none infinite change2;
-  }
-}
-
-.visible {
-  overflow:hidden;
-  height: 40px;
-}
-
-@keyframes change {
-  0%   {margin-top:0;}
-  50%  {margin-top:-35px;}
-  100% {margin-top:-35px;}
-}
-
-@keyframes change2 {
-  0%   {margin-top:-35px;}
-  50%  {margin-top:0;}
-  100% {margin-top:0;}
 }
 
 path {
@@ -211,6 +169,15 @@ path {
   justify-content: space-between;
   padding: 3rem;
   width: 100%;
+  &-columns {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin-top: 5vw;
+    p {
+      font-size: 2.5vw !important;
+    }
+  }
   &-header {
     display: flex;
     justify-content: space-between;
@@ -836,6 +803,88 @@ path {
 .director-grid__item:hover .director-grid__item-hover {
   display: flex;
 }
+
+$ani-speed: 2s;
+$ani-delay: 1s;
+
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    left: 49%;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-first {
+    animation: arrow-movement $ani-speed ease-in-out infinite;
+}
+.arrow-second {
+    animation: arrow-movement $ani-speed $ani-delay ease-in-out infinite;
+}
+
+.arrow-first2 {
+    animation: arrow-movement2 $ani-speed ease-in-out infinite;
+}
+.arrow-second2 {
+    animation: arrow-movement2 $ani-speed $ani-delay ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+        top: 0;
+        left: 0;
+    width: 30px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+
+.upArrow {
+  transform: rotate(180deg);
+  left: 51%;
+
+}
+
+// Animation
+@keyframes arrow-movement {
+    0% {
+        opacity: 0;
+        top: 45%;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes arrow-movement2 {
+    0% {
+        opacity: 0;
+        top: -45%;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 @media only screen and (max-width: 700px) {
   .services-header {
