@@ -87,7 +87,7 @@ body {
 }
 
 .word-spin2 {
-  margin-top:-35px;
+  margin-top:-50px;
   text-align:center;
   list-style:none infinite;
   line-height: 120%;
@@ -101,17 +101,17 @@ body {
 
 .visible {
   overflow:hidden;
-  height: 40px;
+  height: 50px;
 }
 
 @keyframes change {
   0%   {margin-top:0;}
-  50%  {margin-top:-35px;}
-  100% {margin-top:-35px;}
+  50%  {margin-top:-50px;}
+  100% {margin-top:-50px;}
 }
 
 @keyframes change2 {
-  0%   {margin-top:-35px;}
+  0%   {margin-top:-50px;}
   50%  {margin-top:0;}
   100% {margin-top:0;}
 }
@@ -902,32 +902,6 @@ $ani-delay: 1s;
 
 }
 
-// Animation
-@keyframes arrow-movement {
-    0% {
-        opacity: 0;
-        top: 45%;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes arrow-movement2 {
-    0% {
-        opacity: 0;
-        top: -45%;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 
 
 @media only screen and (max-width: 700px) {
