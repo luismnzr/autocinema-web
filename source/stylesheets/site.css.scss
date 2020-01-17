@@ -323,6 +323,12 @@ path {
   }
 }
 
+.mainLinkFooter {
+  img {
+      height: 40px;
+  }
+}
+
 .director {
   display: flex;
   flex-direction: column;
@@ -360,10 +366,11 @@ path {
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 50% 50%;
     height: 100%;
-    max-height: 550px;
     width: 90%;
     margin: auto;
     margin-bottom: 3rem;
+    margin-top: 0;
+    min-height: 60%;
     &__item {
       cursor: pointer;
       display: flex;
@@ -789,7 +796,7 @@ path {
         }
       }
       #maiola2 {
-        background: transparent no-repeat url('../images/maiola/funmodelo.png');
+        background: transparent no-repeat url('../images/maiola/funmodelo.jpg');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -832,8 +839,8 @@ path {
           outline: none;
         }
       }
-      #maiola5 {
-        background: transparent no-repeat url('../images/maiola/telcel.png');
+      #maiola6 {
+        background: transparent no-repeat url('../images/maiola/telcel.jpg');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -923,7 +930,7 @@ $ani-delay: 1s;
   }
   .director-grid {
     grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20% 20%;
   }
   .director-grid__item-hover {
     display: none;
@@ -947,5 +954,11 @@ $ani-delay: 1s;
     justify-content: center;
     padding-left: 0;
     margin-top: 7rem;
+  }
+  .intro-container__logo {
+    margin-bottom: 2.25rem;
+  }
+  .intro-container__logo svg {
+    margin-bottom: 0;
   }
 }

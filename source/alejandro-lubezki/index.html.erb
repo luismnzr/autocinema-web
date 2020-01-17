@@ -1,7 +1,6 @@
 ---
 title: Alejandro Lubezki | Autocinema Ink
 ---
-<a class="mainLink" href="/"><img src="/images/logo-icon@2x.png" alt="Autocinema Ink"></a>
 <div class="director">
   <div class="services-header">
     <p><a class="services-header__link" href="https://goo.gl/maps/5XpHfCmTRwZj5n4q7">Colima 162, Col. Roma Norte, CDMX</a></p>
@@ -17,7 +16,7 @@ title: Alejandro Lubezki | Autocinema Ink
         <h5>Una Guia</h5>
         <img src="../images/play.svg" alt="">
       </div>
-      <video id="lubezki1" class="lubezki-1" onclick="this.controls=true" src="https://player.vimeo.com/external/376976211.sd.mp4?s=209e5b4ab8e64bed028a471df8a0d8c863a66643&profile_id=165" poster="data:image/gif,AAAA"></video>
+      <video id="lubezki1" class="lubezki-1" onclick="this.controls=true" src="https://player.vimeo.com/external/376976211.sd.mp4?s=209e5b4ab8e64bed028a471df8a0d8c863a66643&profile_id=165" poster="data:image/gif,AAAA" type="video/mp4"></video>
     </div>
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
@@ -41,6 +40,7 @@ title: Alejandro Lubezki | Autocinema Ink
       <video id="lubezki4" class="lubezki-4" onclick="this.controls=true" src="https://player.vimeo.com/external/376976120.hd.mp4?s=bb9b33bc4e6edd73af906e93f231f500c9b8ead2&profile_id=174" poster="data:image/gif,AAAA"></video>
     </div>
   </div>
+  <a class="mainLinkFooter" href="/"><img src="/images/logo-icon@2x.png" alt="Autocinema Ink"></a>
 </div>
 
 <script
@@ -54,7 +54,8 @@ title: Alejandro Lubezki | Autocinema Ink
       $('#lubezki1').click(function(){
         .setAttribute("poster"," ");
         .css("background","none");
-         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+        .play()
+         // $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
          .setAttribute("controls","controls");
       });
       $('#lubezki2').click(function(){
