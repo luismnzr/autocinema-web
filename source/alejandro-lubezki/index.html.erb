@@ -10,11 +10,41 @@ title: Alejandro Lubezki | Autocinema Ink
   <div class="director-subheader">
     <h3>Alejandro Lubezki</h3>
   </div>
-  <div class="director-grid">
+  <div id="desktopGrid" class="director-grid">
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Una Guia</h5>
-        <img src="../images/play.svg" alt="">
+        <button class="vimeo-launch" data-vimeo-id="376976211"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="lubezki1" class="lubezki-1"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Es Hora</h5>
+        <button class="vimeo-launch" data-vimeo-id="376976066"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="lubezki2" class="lubezki-2"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Pizzas</h5>
+        <button class="vimeo-launch" data-vimeo-id="376976085"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="lubezki3" class="lubezki-3"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Si Yo Fuera</h5>
+        <button class="vimeo-launch" data-vimeo-id="376976120"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="lubezki4" class="lubezki-4"></div>
+    </div>
+  </div>
+  <div id="mobileGrid" class="director-grid">
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Una Guia</h5>
+        <img  src="../images/play.svg" alt="">
       </div>
       <video id="lubezki1" class="lubezki-1" onclick="this.controls=true" src="https://player.vimeo.com/external/376976211.sd.mp4?s=209e5b4ab8e64bed028a471df8a0d8c863a66643&profile_id=165" poster="data:image/gif,AAAA" type="video/mp4"></video>
     </div>
@@ -48,8 +78,28 @@ title: Alejandro Lubezki | Autocinema Ink
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
-
 <script type="text/javascript">
+  $('body')
+.on('click', '.vimeo-launch', function () {
+  var videoID = $(this).data('vimeo-id'),
+      $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/' + videoID + '/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+  $('body').append($video);
+} )
+
+.on('click', '.vimeo-close', function () {
+  $(this).addClass('closing');
+
+  $('#vimeo-pop-container').delay(700).animate({
+    height: 0,
+    top: '50%'
+  }, 'fast', function () {
+    $('#vimeo-pop-container').remove();
+  });
+} );
+</script>
+
+
+<!-- <script type="text/javascript">
   $(document).ready(function(){
       $('#lubezki1').click(function(){
         .setAttribute("poster"," ");
@@ -77,4 +127,4 @@ title: Alejandro Lubezki | Autocinema Ink
          .css("background","none");
       });
    });
-</script>
+</script> -->

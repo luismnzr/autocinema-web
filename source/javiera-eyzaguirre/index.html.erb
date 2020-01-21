@@ -10,7 +10,45 @@ title: Javiera Eyzaguirre | Autocinema Ink
   <div class="director-subheader">
     <h3>Javiera Eyzaguirre</h3>
   </div>
-  <div class="director-grid">
+  <div id="desktopGrid" class="director-grid">
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Ripley</h5>
+        <button class="vimeo-launch" data-vimeo-id="377081190"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="eyzaguirre1" class="eyzaguirre-1"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Marco Polo</h5>
+        <button class="vimeo-launch" data-vimeo-id="377081023"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="eyzaguirre2" class="eyzaguirre-2"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>JJO</h5>
+        <button class="vimeo-launch" data-vimeo-id="377080518"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="eyzaguirre3" class="eyzaguirre-3"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Ripley</h5>
+        <button class="vimeo-launch" data-vimeo-id="377081473"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="eyzaguirre4" class="eyzaguirre-4"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>KEM Xtreme</h5>
+        <button class="vimeo-launch" data-vimeo-id="377080784"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="eyzaguirre5" class="eyzaguirre-5"></div>
+    </div>
+  </div>
+
+  <div id="mobileGrid" class="director-grid">
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Ripley</h5>
@@ -56,8 +94,28 @@ title: Javiera Eyzaguirre | Autocinema Ink
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    $('body')
+  .on('click', '.vimeo-launch', function () {
+    var videoID = $(this).data('vimeo-id'),
+        $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/' + videoID + '/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+    $('body').append($video);
+  } )
 
-<script type="text/javascript">
+  .on('click', '.vimeo-close', function () {
+    $(this).addClass('closing');
+
+    $('#vimeo-pop-container').delay(700).animate({
+      height: 0,
+      top: '50%'
+    }, 'fast', function () {
+      $('#vimeo-pop-container').remove();
+    });
+  } );
+  </script>
+
+
+<!-- <script type="text/javascript">
   $(document).ready(function(){
       $('#eyzaguirre1').click(function(){
         .setAttribute("poster"," ");
@@ -90,4 +148,4 @@ title: Javiera Eyzaguirre | Autocinema Ink
          .css("background","none");
       });
    });
-</script>
+</script> -->

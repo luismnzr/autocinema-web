@@ -11,7 +11,58 @@ title: Matías Malet | Autocinema Ink
   <div class="director-subheader">
     <h3>Matías Malet</h3>
   </div>
-  <div class="director-grid">
+  <div id="desktopGrid" class="director-grid">
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>AT&T</h5>
+        <button class="vimeo-launch" data-vimeo-id="376986274"><img src="../images/play.svg" alt=""></button>
+
+      </div>
+      <div id="malet1" class="malet-1">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Cinepolis</h5>
+        <button class="vimeo-launch" data-vimeo-id="376986274"><img src="../images/play.svg" alt=""></button>
+
+      </div>
+      <div id="malet2" class="malet-2">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Chevrolet</h5>
+        <button class="vimeo-launch" data-vimeo-id="376986284"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="malet3" class="malet-3">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>CRE-C</h5>
+        <button class="vimeo-launch" data-vimeo-id="376986332"><img src="../images/play.svg" alt=""></button>
+
+      </div>
+      <div id="malet4" class="malet-4">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>EOS</h5>
+        <button class="vimeo-launch" data-vimeo-id="376986332"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="malet5" class="malet-5">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="mobileGrid" class="director-grid">
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>AT&T</h5>
@@ -57,8 +108,27 @@ title: Matías Malet | Autocinema Ink
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    $('body')
+  .on('click', '.vimeo-launch', function () {
+    var videoID = $(this).data('vimeo-id'),
+        $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/' + videoID + '/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+    $('body').append($video);
+  } )
 
-<script type="text/javascript">
+  .on('click', '.vimeo-close', function () {
+    $(this).addClass('closing');
+
+    $('#vimeo-pop-container').delay(700).animate({
+      height: 0,
+      top: '50%'
+    }, 'fast', function () {
+      $('#vimeo-pop-container').remove();
+    });
+  } );
+  </script>
+
+<!-- <script type="text/javascript">
   $(document).ready(function(){
       $('#malet1').click(function(){
         .setAttribute("poster"," ");
@@ -91,4 +161,4 @@ title: Matías Malet | Autocinema Ink
          .css("background","none");
       });
    });
-</script>
+</script> -->

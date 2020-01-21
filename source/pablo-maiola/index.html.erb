@@ -10,7 +10,68 @@ title: Pablo Maiola | Autocinema Ink
   <div class="director-subheader">
     <h3>Pablo Maiola</h3>
   </div>
-  <div class="director-grid">
+
+  <div id="dekstopGrid" class="director-grid">
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Gillette</h5>
+        <button class="vimeo-launch" data-vimeo-id="376985754"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="maiola1" class="maiola-1">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Funcación Modelo</h5>
+        <button class="vimeo-launch" data-vimeo-id="376985754"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="maiola2" class="maiola-2">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Bimbo</h5>
+        <button class="vimeo-launch" data-vimeo-id="376980044"><img src="../images/play.svg" alt=""></button>
+
+      </div>
+      <div id="maiola3" class="maiola-3">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>JGL</h5>
+        <button class="vimeo-launch" data-vimeo-id="376980079"><img src="../images/play.svg" alt=""></button>
+
+      </div>
+      <div id="maiola4" class="maiola-4">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Funcación Origen</h5>
+        <button class="vimeo-launch" data-vimeo-id="376980117"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="maiola5" class="maiola-5">
+
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Telcel</h5>
+        <button class="vimeo-launch" data-vimeo-id="376985768"><img src="../images/play.svg" alt=""></button>
+
+      </div>
+      <div id="maiola6" class="maiola-6">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="mobileGrid" class="director-grid">
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Gillette</h5>
@@ -63,8 +124,27 @@ title: Pablo Maiola | Autocinema Ink
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    $('body')
+  .on('click', '.vimeo-launch', function () {
+    var videoID = $(this).data('vimeo-id'),
+        $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/' + videoID + '/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+    $('body').append($video);
+  } )
 
-<script type="text/javascript">
+  .on('click', '.vimeo-close', function () {
+    $(this).addClass('closing');
+
+    $('#vimeo-pop-container').delay(700).animate({
+      height: 0,
+      top: '50%'
+    }, 'fast', function () {
+      $('#vimeo-pop-container').remove();
+    });
+  } );
+  </script>
+
+<!-- <script type="text/javascript">
   $(document).ready(function(){
       $('#maiola1').click(function(){
         .setAttribute("poster"," ");
@@ -103,4 +183,4 @@ title: Pablo Maiola | Autocinema Ink
          .css("background","none");
       });
    });
-</script>
+</script> -->

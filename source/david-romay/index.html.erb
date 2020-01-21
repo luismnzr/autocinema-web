@@ -10,7 +10,52 @@ title: David Romay | Autocinema Ink
   <div class="director-subheader">
     <h3>David Romay</h3>
   </div>
-  <div class="director-grid">
+  <div id="desktopGrid" class="director-grid">
+    <div class="director-grid__item">
+      <div id="video1play" class="director-grid__item-hover">
+        <h5>Club América</h5>
+        <button class="vimeo-launch" data-vimeo-id="376977396"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="video1" class="romay-1"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Land Rover</h5>
+        <button class="vimeo-launch" data-vimeo-id="376977668"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="video2" class="romay-2"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Prudential</h5>
+        <button class="vimeo-launch" data-vimeo-id="376977991"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="video3" class="romay-3"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Segunda Mano</h5>
+        <button class="vimeo-launch" data-vimeo-id="376979374"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="video4" class="romay-4"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Detrás de la Montaña</h5>
+        <button class="vimeo-launch" data-vimeo-id="376979437"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="video5" class="romay-5"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>HSBC</h5>
+        <button class="vimeo-launch" data-vimeo-id="376977648"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="video6" class="romay-6"></div>
+    </div>
+  </div>
+
+  <div id="mobileGrid" class="director-grid">
     <div class="director-grid__item">
       <div id="video1play" class="director-grid__item-hover">
         <h5>Club América</h5>
@@ -58,10 +103,32 @@ title: David Romay | Autocinema Ink
 
 </div>
 
-<%= javascript_include_tag "jquery" %>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+  $('body')
+.on('click', '.vimeo-launch', function () {
+  var videoID = $(this).data('vimeo-id'),
+      $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/' + videoID + '/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+  $('body').append($video);
+} )
 
-<script>
+.on('click', '.vimeo-close', function () {
+  $(this).addClass('closing');
+
+  $('#vimeo-pop-container').delay(700).animate({
+    height: 0,
+    top: '50%'
+  }, 'fast', function () {
+    $('#vimeo-pop-container').remove();
+  });
+} );
+</script>
+
+<!-- <script>
 
   $(document).ready(function(){
     function toggleBg() {
@@ -139,4 +206,4 @@ title: David Romay | Autocinema Ink
       });
    });
 
-</script>
+</script> -->

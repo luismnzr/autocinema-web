@@ -10,7 +10,47 @@ title: Eric Mejía | Autocinema Ink
   <div class="director-subheader">
     <h3>Eric Mejía</h3>
   </div>
-  <div class="director-grid">
+
+  <div id="desktopGrid" class="director-grid">
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Crediamigo</h5>
+        <button class="vimeo-launch" data-vimeo-id="377083398"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="mejia1" class="mejia-1"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Pritt</h5>
+        <button class="vimeo-launch" data-vimeo-id="377083468"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="mejia2" class="mejia-2"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Coca Cola</h5>
+        <button class="vimeo-launch" data-vimeo-id="377083367"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="mejia3" class="mejia-3"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Pullups</h5>
+        <button class="vimeo-launch" data-vimeo-id="377083511"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="mejia4" class="mejia-4"></div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Huggies</h5>
+        <button class="vimeo-launch" data-vimeo-id="377083538"><img src="../images/play.svg" alt=""></button>
+      </div>
+      <div id="mejia5" class="mejia-5"></div>
+      <video id="mejia5" class="mejia-5" onclick="this.controls=true" src="https://player.vimeo.com/external/377083538.hd.mp4?s=d8e95d9375ec0d0a7b96522fffa9e2d9b5687d5b&profile_id=174" poster="data:image/gif,AAAA"></video>
+    </div>
+  </div>
+
+  <div id="mobileGrid" class="director-grid">
     <div class="director-grid__item">
       <div class="director-grid__item-hover">
         <h5>Crediamigo</h5>
@@ -56,8 +96,28 @@ title: Eric Mejía | Autocinema Ink
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
+  <script type="text/javascript">
+    $('body')
+  .on('click', '.vimeo-launch', function () {
+    var videoID = $(this).data('vimeo-id'),
+        $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/' + videoID + '/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+    $('body').append($video);
+  } )
 
-<script type="text/javascript">
+  .on('click', '.vimeo-close', function () {
+    $(this).addClass('closing');
+
+    $('#vimeo-pop-container').delay(700).animate({
+      height: 0,
+      top: '50%'
+    }, 'fast', function () {
+      $('#vimeo-pop-container').remove();
+    });
+  } );
+  </script>
+
+
+<!-- <script type="text/javascript">
   $(document).ready(function(){
       $('#mejia1').click(function(){
         .setAttribute("poster"," ");
@@ -90,4 +150,4 @@ title: Eric Mejía | Autocinema Ink
          .css("background","none");
       });
    });
-</script>
+</script> -->
