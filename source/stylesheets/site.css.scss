@@ -319,7 +319,7 @@ path {
 .projects {
   align-items: center;
   background: url('../images/1.gif');
-  background-size: cover !important;
+  background-size: auto 135% !important;
   background-position: center !important;
   display: flex;
   flex-direction: column;
@@ -1269,7 +1269,7 @@ $ani-delay: 1s;
   }
 
   .intro-container__logo {
-    margin-bottom: 2.25rem;
+    margin-top: 2.5rem;
   }
 
   .intro-container__logo svg {
@@ -1290,7 +1290,12 @@ $ani-delay: 1s;
   }
 
   .projects {
-    padding: 3rem 0;
+    padding: 0;
+    background-size: auto 150% !important;
+  }
+
+  .projects-logo {
+    padding-bottom: 2rem;
   }
 
   .projects-list__row ul {
@@ -1304,5 +1309,30 @@ $ani-delay: 1s;
 
   .projects-list__row a {
     font-size: 3.5vw;
+  }
+
+  .intro {
+    .arrowSvg {
+      height: 20px;
+    }
+  }
+
+  .word-spin {
+    animation: 1s ease 0s normal none infinite change;
+    -webkit-animation: 1s ease 0s normal none infinite change;
+    -moz-animation: 1s ease 0s normal none infinite change;
+    -o-animation: 1s ease 0s normal none infinite change;
+  }
+
+  .word-spin2 {
+    animation: 1s ease 0s normal none infinite change2;
+    -webkit-animation: 1s ease 0s normal none infinite change2;
+    -moz-animation: 1s ease 0s normal none infinite change2;
+    -o-animation: 1s ease 0s normal none infinite change2;
+  }
+
+  .visible {
+    overflow: hidden;
+    height: 35px;
   }
 }
