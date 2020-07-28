@@ -259,7 +259,7 @@ path {
     }
 
     p {
-      font-size: 2.2vw !important;
+      font-size: 1.6vw !important;
     }
   }
 
@@ -290,7 +290,7 @@ path {
 
   &-list {
     h3 {
-      font-size: 4vw;
+      font-size: 3.6vw;
       font-weight: 300;
       line-height: 140%;
       text-align: left;
@@ -598,6 +598,19 @@ path {
         }
       }
 
+      #lubezki5 {
+        background: transparent no-repeat url('../images/lubezki/sin-delantal.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
       #hari1 {
         background: transparent no-repeat url('../images/hari/mercedes.png');
         background-size: cover;
@@ -662,6 +675,18 @@ path {
           outline: none;
         }
       }
+      #hari6 {
+        background: transparent no-repeat url('../images/hari/roshfrans.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
 
       #eyzaguirre1 {
         background: transparent no-repeat url('../images/eyzaguirre/ripley.png');
@@ -690,7 +715,7 @@ path {
       }
 
       #eyzaguirre3 {
-        background: transparent no-repeat url('../images/eyzaguirre/jjo.png');
+        background: transparent no-repeat url('../images/eyzaguirre/cusqueño.png');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -716,7 +741,20 @@ path {
       }
 
       #eyzaguirre5 {
-        background: transparent no-repeat url('../images/eyzaguirre/xem.png');
+        background: transparent no-repeat url('../images/eyzaguirre/galaxy.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #eyzaguirre6 {
+        background: transparent no-repeat url('../images/eyzaguirre/falabella.png');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -793,6 +831,19 @@ path {
         }
       }
 
+      #green6 {
+        background: transparent no-repeat url('../images/green/bridgestone.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
       #mejia1 {
         background: transparent no-repeat url('../images/mejia/crediamigo.png');
         background-size: cover;
@@ -847,6 +898,32 @@ path {
 
       #mejia5 {
         background: transparent no-repeat url('../images/mejia/huggies.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #mejia6 {
+        background: transparent no-repeat url('../images/mejia/amortiguadores.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #mejia7 {
+        background: transparent no-repeat url('../images/mejia/mercedes.png');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -937,7 +1014,7 @@ path {
       }
 
       #maiola2 {
-        background: transparent no-repeat url('../images/maiola/funmodelo.jpg');
+        background: transparent no-repeat url('../images/maiola/carroceria.png');
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1103,7 +1180,7 @@ $ani-delay: 1s;
 
     position: absolute;
     bottom: 100%;
-    right: 0;
+    right: 20px;
 
     transition: 200ms background-color;
 
