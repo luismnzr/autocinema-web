@@ -611,6 +611,19 @@ path {
         }
       }
 
+      #lubezki6 {
+        background: transparent no-repeat url('../images/lubezki/conekta.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
       #hari1 {
         background: transparent no-repeat url('../images/hari/mercedes.png');
         background-size: cover;
