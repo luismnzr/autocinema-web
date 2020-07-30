@@ -1090,6 +1090,18 @@ path {
           outline: none;
         }
       }
+      #maiola7 {
+        background: transparent no-repeat url('../images/maiola/funmodelo.jpg');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
     }
   }
 }
