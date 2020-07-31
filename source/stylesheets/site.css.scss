@@ -336,8 +336,12 @@ path {
       display: flex;
       list-style: none;
       width: 100%;
-      justify-content: space-between;
+      justify-content: space-evenly;
       margin-bottom: 1rem;
+    }
+
+    &__rowTop {
+      justify-content: center !important;
     }
 
     &__row a {
@@ -690,6 +694,19 @@ path {
       }
       #hari6 {
         background: transparent no-repeat url('../images/hari/roshfrans.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #hari7 {
+        background: transparent no-repeat url('../images/hari/auditorio.png');
         background-size: cover;
         width: 100%;
         background-position: center;
