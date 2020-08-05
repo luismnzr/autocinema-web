@@ -965,6 +965,19 @@ path {
         }
       }
 
+      #mejia8 {
+        background: transparent no-repeat url('../images/mejia/venastat.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
       #malet1 {
         background: transparent no-repeat url('../images/malet/att.png');
         background-size: cover;
