@@ -978,6 +978,32 @@ path {
         }
       }
 
+      #mejia9 {
+        background: transparent no-repeat url('../images/mejia/papajohns.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #mejia10 {
+        background: transparent no-repeat url('../images/mejia/volkswagen.png');
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
       #malet1 {
         background: transparent no-repeat url('../images/malet/att.png');
         background-size: cover;
