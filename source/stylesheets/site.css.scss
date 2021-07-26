@@ -1,18 +1,18 @@
-@import 'fullpage';
-@import 'animate';
+@import "fullpage";
+@import "animate";
 
 @font-face {
-  font-family: 'RT Alias Grotesk';
-  src: url('RTAliasGrotesk-Regular.woff2') format('woff2'),
-    url('RTAliasGrotesk-Regular.woff') format('woff');
+  font-family: "RT Alias Grotesk";
+  src: url("RTAliasGrotesk-Regular.woff2") format("woff2"),
+    url("RTAliasGrotesk-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'RT Alias Grotesk';
-  src: url('RTAliasGrotesk-Light.woff2') format('woff2'),
-    url('RTAliasGrotesk-Light.woff') format('woff');
+  font-family: "RT Alias Grotesk";
+  src: url("RTAliasGrotesk-Light.woff2") format("woff2"),
+    url("RTAliasGrotesk-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -26,7 +26,7 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: 'RT Alias Grotesk', sans-serif;
+  font-family: "RT Alias Grotesk", sans-serif;
   text-align: center;
 }
 
@@ -140,7 +140,6 @@ body {
   }
 }
 
-
 path {
   opacity: 0;
   -webkit-animation: fadeIn ease-in 1;
@@ -251,7 +250,7 @@ path {
     a {
       color: #fff;
       text-decoration: none;
-      transition: all .25s ease;
+      transition: all 0.25s ease;
 
       &:hover {
         text-decoration: underline;
@@ -318,7 +317,7 @@ path {
 
 .projects {
   align-items: center;
-  background: url('../images/2.gif');
+  background: url("../images/2.gif");
   background-size: auto 135% !important;
   background-position: center !important;
   display: flex;
@@ -327,7 +326,7 @@ path {
   justify-content: flex-end;
   padding: 3rem;
   width: 100%;
-  transition: .25s;
+  transition: 0.25s;
 
   &-list {
     width: 100%;
@@ -347,13 +346,13 @@ path {
     &__row a {
       color: #fff;
       cursor: pointer;
-      font-size: 2.7vw;
+      font-size: 2.5vw;
       text-decoration: none;
       text-transform: uppercase;
-      transition: .25s;
+      transition: 0.25s;
 
       &:hover {
-        color: #F37317;
+        color: #f37317;
       }
     }
 
@@ -392,7 +391,8 @@ path {
   }
 }
 
-#desktopGrid {}
+#desktopGrid {
+}
 
 .director {
   display: flex;
@@ -422,10 +422,10 @@ path {
       font-weight: 300;
       text-decoration: none;
       text-transform: uppercase;
-      transition: .25s;
+      transition: 0.25s;
 
       &:hover {
-        color: #F37317;
+        color: #f37317;
       }
     }
   }
@@ -448,7 +448,7 @@ path {
       height: 200px;
 
       &-hover {
-        background: rgba(0, 0, 0, .65);
+        background: rgba(0, 0, 0, 0.65);
         height: 200px;
         position: absolute;
         width: 100%;
@@ -456,7 +456,7 @@ path {
         justify-content: space-evenly;
         align-items: center;
         display: none;
-        transition: .25s ease;
+        transition: 0.25s ease;
 
         h5 {
           position: absolute;
@@ -471,7 +471,7 @@ path {
       }
 
       #video1 {
-        background: url('../images/bg-romay.png');
+        background: url("../images/bg-romay.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -486,7 +486,7 @@ path {
       }
 
       #video2 {
-        background: transparent no-repeat url('../images/romay/cover-land.png');
+        background: transparent no-repeat url("../images/romay/cover-land.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -499,7 +499,8 @@ path {
       }
 
       #video3 {
-        background: transparent no-repeat url('../images/romay/cover-prudential.png');
+        background: transparent no-repeat
+          url("../images/romay/cover-prudential.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -512,7 +513,8 @@ path {
       }
 
       #video4 {
-        background: transparent no-repeat url('../images/romay/cover-segunda.png');
+        background: transparent no-repeat
+          url("../images/romay/cover-segunda.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -525,7 +527,8 @@ path {
       }
 
       #video5 {
-        background: transparent no-repeat url('../images/romay/cover-montana.png');
+        background: transparent no-repeat
+          url("../images/romay/cover-montana.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -538,7 +541,7 @@ path {
       }
 
       #video6 {
-        background: transparent no-repeat url('../images/romay/hsbc.png');
+        background: transparent no-repeat url("../images/romay/hsbc.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -551,7 +554,7 @@ path {
       }
 
       #lubezki1 {
-        background: transparent no-repeat url('../images/lubezki/guia.png');
+        background: transparent no-repeat url("../images/lubezki/guia.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -564,7 +567,7 @@ path {
       }
 
       #lubezki2 {
-        background: transparent no-repeat url('../images/lubezki/es-hora.png');
+        background: transparent no-repeat url("../images/lubezki/es-hora.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -577,7 +580,7 @@ path {
       }
 
       #lubezki3 {
-        background: transparent no-repeat url('../images/lubezki/pizzas.png');
+        background: transparent no-repeat url("../images/lubezki/pizzas.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -590,7 +593,8 @@ path {
       }
 
       #lubezki4 {
-        background: transparent no-repeat url('../images/lubezki/si-yo-fuera.png');
+        background: transparent no-repeat
+          url("../images/lubezki/si-yo-fuera.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -603,7 +607,8 @@ path {
       }
 
       #lubezki5 {
-        background: transparent no-repeat url('../images/lubezki/sin-delantal.png');
+        background: transparent no-repeat
+          url("../images/lubezki/sin-delantal.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -616,7 +621,7 @@ path {
       }
 
       #lubezki6 {
-        background: transparent no-repeat url('../images/lubezki/conekta.png');
+        background: transparent no-repeat url("../images/lubezki/conekta.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -629,7 +634,7 @@ path {
       }
 
       #hari1 {
-        background: transparent no-repeat url('../images/hari/mercedes.png');
+        background: transparent no-repeat url("../images/hari/mercedes.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -642,7 +647,7 @@ path {
       }
 
       #hari2 {
-        background: transparent no-repeat url('../images/hari/hoteles.png');
+        background: transparent no-repeat url("../images/hari/hoteles.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -655,7 +660,7 @@ path {
       }
 
       #hari3 {
-        background: transparent no-repeat url('../images/hari/modelo.png');
+        background: transparent no-repeat url("../images/hari/modelo.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -668,7 +673,7 @@ path {
       }
 
       #hari4 {
-        background: transparent no-repeat url('../images/hari/modelo2.png');
+        background: transparent no-repeat url("../images/hari/modelo2.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -681,7 +686,7 @@ path {
       }
 
       #hari5 {
-        background: transparent no-repeat url('../images/hari/modelo3.png');
+        background: transparent no-repeat url("../images/hari/modelo3.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -694,7 +699,7 @@ path {
       }
 
       #hari6 {
-        background: transparent no-repeat url('../images/hari/roshfrans.png');
+        background: transparent no-repeat url("../images/hari/roshfrans.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -707,7 +712,7 @@ path {
       }
 
       #hari7 {
-        background: transparent no-repeat url('../images/hari/auditorio.png');
+        background: transparent no-repeat url("../images/hari/auditorio.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -720,7 +725,7 @@ path {
       }
 
       #eyzaguirre1 {
-        background: transparent no-repeat url('../images/eyzaguirre/ripley.png');
+        background: transparent no-repeat url("../images/eyzaguirre/ripley.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -733,7 +738,8 @@ path {
       }
 
       #eyzaguirre2 {
-        background: transparent no-repeat url('../images/eyzaguirre/marco-polo.png');
+        background: transparent no-repeat
+          url("../images/eyzaguirre/marco-polo.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -746,7 +752,8 @@ path {
       }
 
       #eyzaguirre3 {
-        background: transparent no-repeat url('../images/eyzaguirre/cusqueno.png');
+        background: transparent no-repeat
+          url("../images/eyzaguirre/cusqueno.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -759,7 +766,8 @@ path {
       }
 
       #eyzaguirre4 {
-        background: transparent no-repeat url('../images/eyzaguirre/ripley2.png');
+        background: transparent no-repeat
+          url("../images/eyzaguirre/ripley2.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -772,7 +780,7 @@ path {
       }
 
       #eyzaguirre5 {
-        background: transparent no-repeat url('../images/eyzaguirre/galaxy.png');
+        background: transparent no-repeat url("../images/eyzaguirre/galaxy.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -785,7 +793,8 @@ path {
       }
 
       #eyzaguirre6 {
-        background: transparent no-repeat url('../images/eyzaguirre/falabella.png');
+        background: transparent no-repeat
+          url("../images/eyzaguirre/falabella.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -798,7 +807,7 @@ path {
       }
 
       #tena1 {
-        background: transparent no-repeat url('../images/tena/sameway.png');
+        background: transparent no-repeat url("../images/tena/sameway.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -811,7 +820,7 @@ path {
       }
 
       #tena2 {
-        background: transparent no-repeat url('../images/tena/discovery.png');
+        background: transparent no-repeat url("../images/tena/discovery.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -824,7 +833,7 @@ path {
       }
 
       #tena3 {
-        background: transparent no-repeat url('../images/tena/mtv.png');
+        background: transparent no-repeat url("../images/tena/mtv.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -837,7 +846,7 @@ path {
       }
 
       #tena4 {
-        background: transparent no-repeat url('../images/tena/teleton.png');
+        background: transparent no-repeat url("../images/tena/teleton.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -850,7 +859,7 @@ path {
       }
 
       #tena5 {
-        background: transparent no-repeat url('../images/tena/novia.png');
+        background: transparent no-repeat url("../images/tena/novia.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -863,7 +872,7 @@ path {
       }
 
       #tena6 {
-        background: transparent no-repeat url('../images/tena/aguila.png');
+        background: transparent no-repeat url("../images/tena/aguila.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -873,11 +882,10 @@ path {
           background: none !important;
           outline: none;
         }
-
       }
 
       #green1 {
-        background: transparent no-repeat url('../images/green/bentley.png');
+        background: transparent no-repeat url("../images/green/bentley.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -890,7 +898,7 @@ path {
       }
 
       #green2 {
-        background: transparent no-repeat url('../images/green/tag.png');
+        background: transparent no-repeat url("../images/green/tag.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -903,7 +911,7 @@ path {
       }
 
       #green3 {
-        background: transparent no-repeat url('../images/green/cadillac.png');
+        background: transparent no-repeat url("../images/green/cadillac.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -916,7 +924,7 @@ path {
       }
 
       #green4 {
-        background: transparent no-repeat url('../images/green/mclaren.png');
+        background: transparent no-repeat url("../images/green/mclaren.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -929,7 +937,7 @@ path {
       }
 
       #green5 {
-        background: transparent no-repeat url('../images/green/jaguar.png');
+        background: transparent no-repeat url("../images/green/jaguar.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -942,7 +950,7 @@ path {
       }
 
       #green6 {
-        background: transparent no-repeat url('../images/green/bridgestone.png');
+        background: transparent no-repeat url("../images/green/bridgestone.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -955,7 +963,7 @@ path {
       }
 
       #mejia1 {
-        background: transparent no-repeat url('../images/mejia/crediamigo.png');
+        background: transparent no-repeat url("../images/mejia/crediamigo.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -968,7 +976,7 @@ path {
       }
 
       #mejia2 {
-        background: transparent no-repeat url('../images/mejia/pritt.png');
+        background: transparent no-repeat url("../images/mejia/pritt.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -981,7 +989,7 @@ path {
       }
 
       #mejia3 {
-        background: transparent no-repeat url('../images/mejia/coca.png');
+        background: transparent no-repeat url("../images/mejia/coca.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -994,7 +1002,7 @@ path {
       }
 
       #mejia4 {
-        background: transparent no-repeat url('../images/mejia/pullups.png');
+        background: transparent no-repeat url("../images/mejia/pullups.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1007,7 +1015,7 @@ path {
       }
 
       #mejia5 {
-        background: transparent no-repeat url('../images/mejia/huggies.png');
+        background: transparent no-repeat url("../images/mejia/huggies.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1020,7 +1028,8 @@ path {
       }
 
       #mejia6 {
-        background: transparent no-repeat url('../images/mejia/amortiguadores.png');
+        background: transparent no-repeat
+          url("../images/mejia/amortiguadores.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1033,7 +1042,7 @@ path {
       }
 
       #mejia7 {
-        background: transparent no-repeat url('../images/mejia/mercedes.png');
+        background: transparent no-repeat url("../images/mejia/mercedes.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1046,7 +1055,7 @@ path {
       }
 
       #mejia8 {
-        background: transparent no-repeat url('../images/mejia/venastat.png');
+        background: transparent no-repeat url("../images/mejia/venastat.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1059,7 +1068,7 @@ path {
       }
 
       #mejia9 {
-        background: transparent no-repeat url('../images/mejia/papajohns.png');
+        background: transparent no-repeat url("../images/mejia/papajohns.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1072,7 +1081,7 @@ path {
       }
 
       #mejia10 {
-        background: transparent no-repeat url('../images/mejia/volkswagen.png');
+        background: transparent no-repeat url("../images/mejia/volkswagen.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1085,7 +1094,7 @@ path {
       }
 
       #malet1 {
-        background: transparent no-repeat url('../images/malet/att.png');
+        background: transparent no-repeat url("../images/malet/att.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1098,7 +1107,7 @@ path {
       }
 
       #malet2 {
-        background: transparent no-repeat url('../images/malet/cinepolis.png');
+        background: transparent no-repeat url("../images/malet/cinepolis.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1111,7 +1120,7 @@ path {
       }
 
       #malet3 {
-        background: transparent no-repeat url('../images/malet/chevrolet.png');
+        background: transparent no-repeat url("../images/malet/chevrolet.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1124,7 +1133,7 @@ path {
       }
 
       #malet4 {
-        background: transparent no-repeat url('../images/malet/cre-c.png');
+        background: transparent no-repeat url("../images/malet/cre-c.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1137,7 +1146,20 @@ path {
       }
 
       #malet5 {
-        background: transparent no-repeat url('../images/malet/eos.png');
+        background: transparent no-repeat url("../images/malet/eos.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #iglesia1 {
+        background: transparent no-repeat url("../images/iglesia/reel.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1150,7 +1172,7 @@ path {
       }
 
       #maiola1 {
-        background: transparent no-repeat url('../images/maiola/gillette.png');
+        background: transparent no-repeat url("../images/maiola/gillette.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1163,7 +1185,7 @@ path {
       }
 
       #maiola2 {
-        background: transparent no-repeat url('../images/maiola/carroceria.png');
+        background: transparent no-repeat url("../images/maiola/carroceria.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1176,7 +1198,7 @@ path {
       }
 
       #maiola3 {
-        background: transparent no-repeat url('../images/maiola/bimbo.png');
+        background: transparent no-repeat url("../images/maiola/bimbo.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1189,7 +1211,7 @@ path {
       }
 
       #maiola4 {
-        background: transparent no-repeat url('../images/maiola/jgl.png');
+        background: transparent no-repeat url("../images/maiola/jgl.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1202,7 +1224,7 @@ path {
       }
 
       #maiola5 {
-        background: transparent no-repeat url('../images/maiola/origen.png');
+        background: transparent no-repeat url("../images/maiola/origen.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1215,7 +1237,7 @@ path {
       }
 
       #maiola6 {
-        background: transparent no-repeat url('../images/maiola/telcel.jpg');
+        background: transparent no-repeat url("../images/maiola/telcel.jpg");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1228,7 +1250,85 @@ path {
       }
 
       #maiola7 {
-        background: transparent no-repeat url('../images/maiola/funmodelo.jpg');
+        background: transparent no-repeat url("../images/maiola/funmodelo.jpg");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #almar1 {
+        background: transparent no-repeat url("../images/almar/aeromexico.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #almar2 {
+        background: transparent no-repeat url("../images/almar/sprite.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #almar3 {
+        background: transparent no-repeat url("../images/almar/ford.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #almar4 {
+        background: transparent no-repeat url("../images/almar/telcel.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #almar5 {
+        background: transparent no-repeat url("../images/almar/coca-cola.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #almar7 {
+        background: transparent no-repeat url("../images/almar/terra.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1249,7 +1349,6 @@ path {
 
 $ani-speed: 2s;
 $ani-delay: 1s;
-
 
 .arrow {
   opacity: 0;
@@ -1278,7 +1377,7 @@ $ani-delay: 1s;
 .arrow:before,
 .arrow:after {
   background: #fff;
-  content: '';
+  content: "";
   display: block;
   height: 3px;
   position: absolute;
@@ -1321,7 +1420,7 @@ $ani-delay: 1s;
   left: 0;
   z-index: 9999999;
 
-  background: rgba(black, .75);
+  background: rgba(black, 0.75);
 
   div {
     height: 85%;
@@ -1348,7 +1447,7 @@ $ani-delay: 1s;
 
     &:before,
     &:after {
-      content: '';
+      content: "";
 
       background: white;
       border-radius: 3px;
@@ -1375,7 +1474,7 @@ $ani-delay: 1s;
     }
 
     &:hover {
-      background-color: rgba(black, .25);
+      background-color: rgba(black, 0.25);
     }
 
     &.closing {
@@ -1445,7 +1544,7 @@ $ani-delay: 1s;
     font-size: 2rem;
 
     span a {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -1486,7 +1585,7 @@ $ani-delay: 1s;
   }
 
   .director-grid__item-hover {
-    background: rgba(0, 0, 0, .65);
+    background: rgba(0, 0, 0, 0.65);
     height: 0;
     position: inherit;
     width: 0;
