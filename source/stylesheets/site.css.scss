@@ -1092,6 +1092,85 @@ path {
         }
       }
 
+      #casanova1 {
+        background: transparent no-repeat url("../images/casanova/reel.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #casanova2 {
+        background: transparent no-repeat url("../images/casanova/dipper.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #casanova3 {
+        background: transparent no-repeat url("../images/casanova/twyp.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #casanova4 {
+        background: transparent no-repeat
+          url("../images/casanova/bimba-lola.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #casanova5 {
+        background: transparent no-repeat url("../images/casanova/movistar.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
+      #casanova6 {
+        background: transparent no-repeat url("../images/casanova/klikin.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
       #malet1 {
         background: transparent no-repeat url("../images/malet/att.png");
         background-size: cover;
