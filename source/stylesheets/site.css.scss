@@ -615,6 +615,18 @@ path {
           outline: none;
         }
       }
+      #bruera6 {
+        background: transparent no-repeat url("../images/bruera/bailarina.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
 
       #hugo1 {
         background: transparent no-repeat url("../images/hugo/viceroy.png");
