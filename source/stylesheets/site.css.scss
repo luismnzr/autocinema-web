@@ -1389,6 +1389,19 @@ path {
         }
       }
 
+      #malet6 {
+        background: transparent no-repeat url("../images/malet/fifa.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+
       #iglesia1 {
         background: transparent no-repeat url("../images/iglesia/reel.png");
         background-size: cover;
