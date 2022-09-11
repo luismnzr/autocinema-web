@@ -346,7 +346,7 @@ path {
     &__row a {
       color: #fff;
       cursor: pointer;
-      font-size: 2.5vw;
+      font-size: 2vw;
       text-decoration: none;
       text-transform: uppercase;
       transition: 0.25s;
@@ -1583,6 +1583,78 @@ path {
           outline: none;
         }
       }
+      #prada1 {
+        background: transparent no-repeat url("../images/prada/madrid.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prada2 {
+        background: transparent no-repeat url("../images/prada/plaza.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prada3 {
+        background: transparent no-repeat url("../images/prada/chivas.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prada4 {
+        background: transparent no-repeat url("../images/prada/t1.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prada5 {
+        background: transparent no-repeat url("../images/prada/rodri.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prada6 {
+        background: transparent no-repeat url("../images/prada/taburete.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
     }
   }
 }
@@ -1890,7 +1962,7 @@ $ani-delay: 1s;
   }
 
   .projects-list__row a {
-    font-size: 3.5vw;
+    font-size: 3.1vw;
   }
 
   .intro {
