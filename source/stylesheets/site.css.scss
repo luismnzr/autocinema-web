@@ -241,7 +241,11 @@ path {
     display: flex;
     text-align: left;
     justify-content: space-between;
-    margin-top: 5vw;
+    margin-top: 4vw;
+
+    .lowercase {
+      text-transform: lowercase;
+    }
 
     span {
       line-height: 220%;
