@@ -1659,6 +1659,126 @@ path {
           outline: none;
         }
       }
+      #pollo1 {
+        background: transparent no-repeat url("../images/pollo/amex.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pollo2 {
+        background: transparent no-repeat url("../images/pollo/smart.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pollo3 {
+        background: transparent no-repeat url("../images/pollo/audi.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pollo4 {
+        background: transparent no-repeat url("../images/pollo/nails.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pollo5 {
+        background: transparent no-repeat url("../images/pollo/volkswagen.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #montserrat1 {
+        background: transparent no-repeat url("../images/montserrat/liverpool1.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #montserrat2 {
+        background: transparent no-repeat url("../images/montserrat/liverpool2.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #montserrat3 {
+        background: transparent no-repeat url("../images/montserrat/ricitos.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #montserrat4 {
+        background: transparent no-repeat url("../images/montserrat/liverpool3.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #montserrat5 {
+        background: transparent no-repeat url("../images/montserrat/liverpool4.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
     }
   }
 }
