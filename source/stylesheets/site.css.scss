@@ -1720,7 +1720,8 @@ path {
         }
       }
       #montserrat1 {
-        background: transparent no-repeat url("../images/montserrat/liverpool1.png");
+        background: transparent no-repeat
+          url("../images/montserrat/liverpool1.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1732,7 +1733,8 @@ path {
         }
       }
       #montserrat2 {
-        background: transparent no-repeat url("../images/montserrat/liverpool2.png");
+        background: transparent no-repeat
+          url("../images/montserrat/liverpool2.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1744,7 +1746,8 @@ path {
         }
       }
       #montserrat3 {
-        background: transparent no-repeat url("../images/montserrat/ricitos.png");
+        background: transparent no-repeat
+          url("../images/montserrat/ricitos.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1756,7 +1759,8 @@ path {
         }
       }
       #montserrat4 {
-        background: transparent no-repeat url("../images/montserrat/liverpool3.png");
+        background: transparent no-repeat
+          url("../images/montserrat/liverpool3.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1768,7 +1772,80 @@ path {
         }
       }
       #montserrat5 {
-        background: transparent no-repeat url("../images/montserrat/liverpool4.png");
+        background: transparent no-repeat
+          url("../images/montserrat/liverpool4.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #sava1 {
+        background: transparent no-repeat url("../images/sava/xx.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #sava2 {
+        background: transparent no-repeat url("../images/sava/dominos.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #sava3 {
+        background: transparent no-repeat url("../images/sava/thinkful.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #sava4 {
+        background: transparent no-repeat url("../images/sava/somontano.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #sava5 {
+        background: transparent no-repeat url("../images/sava/renault.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #sava6 {
+        background: transparent no-repeat url("../images/sava/mg.png");
         background-size: cover;
         width: 100%;
         background-position: center;
