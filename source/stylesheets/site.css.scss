@@ -267,9 +267,16 @@ path {
   }
 
   &-header {
+    position: fixed;
+    padding: 2rem 2.5rem;
+    z-index: 99;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    top: 0;
+    p {
+      width: 150px;
+    }
 
     &__link {
       color: #fff;
@@ -401,20 +408,19 @@ path {
 .director {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   padding: 3rem;
   width: 100%;
 
   &-subheader {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 4rem 0;
-    padding-left: 11%;
+    justify-content: center;
+    height: 100vh;
+    min-height: 600px;
 
     h3 {
       color: #fff;
-      font-size: 2.7rem;
+      font-size: 5rem;
       font-weight: 300;
       text-decoration: none;
       text-transform: uppercase;
@@ -436,35 +442,32 @@ path {
 
   &-grid {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 50% 50%;
-    height: 100%;
-    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
     margin: auto;
     margin-bottom: 3rem;
     margin-top: 0;
-    min-height: 60%;
 
     &__item {
       cursor: pointer;
       display: flex;
       position: relative;
-      height: 200px;
+      height: 350px;
 
       &-hover {
         background: rgba(0, 0, 0, 0.65);
-        height: 200px;
+        height: 350px;
         position: absolute;
         width: 100%;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        justify-content: end;
+        align-items: baseline;
+        padding: 30px;
         display: none;
         transition: 0.25s ease;
 
         h5 {
-          position: absolute;
-          top: 50px;
           font-size: 21px;
           text-transform: uppercase;
         }
@@ -474,8 +477,15 @@ path {
         }
       }
 
+      .video1 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("../images/bg-romay.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
       #video1 {
-        background: url("../images/bg-romay.png");
+        background: url("../images/romay/america.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -490,7 +500,7 @@ path {
       }
 
       #video2 {
-        background: transparent no-repeat url("../images/romay/cover-land.png");
+        background: transparent no-repeat url("../images/romay/landrover.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -500,11 +510,17 @@ path {
           background: none !important;
           outline: none;
         }
+      }
+
+      .video2 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("../images/romay/cover-land.png");
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       #video3 {
-        background: transparent no-repeat
-          url("../images/romay/cover-prudential.png");
+        background: transparent no-repeat url("../images/romay/prudential.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -514,11 +530,17 @@ path {
           background: none !important;
           outline: none;
         }
+      }
+
+      .video3 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("../images/romay/cover-prudential.png");
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       #video4 {
-        background: transparent no-repeat
-          url("../images/romay/cover-segunda.png");
+        background: transparent no-repeat url("../images/romay/lampara.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -530,9 +552,15 @@ path {
         }
       }
 
+      .video4 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("../images/romay/cover-segunda.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
       #video5 {
-        background: transparent no-repeat
-          url("../images/romay/cover-montana.png");
+        background: transparent no-repeat url("../images/romay/montana.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -542,6 +570,13 @@ path {
           background: none !important;
           outline: none;
         }
+      }
+
+      .video5 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("../images/romay/cover-montana.png");
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       #video6 {
@@ -555,6 +590,13 @@ path {
           background: none !important;
           outline: none;
         }
+      }
+
+      .video6 {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("../images/romay/telcel2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       #bruera1 {
@@ -1860,6 +1902,14 @@ path {
   }
 }
 
+.director-romay {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/2.gif")
+  );
+  background-size: cover;
+}
+
 .director-grid__item:hover .director-grid__item-hover {
   display: flex;
 }
@@ -1919,14 +1969,6 @@ $ani-delay: 1s;
 }
 
 .vimeo-launch {
-  appearance: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
 }
 
 #vimeo-pop-container {
@@ -2049,7 +2091,7 @@ $ani-delay: 1s;
   }
 
   .services-header {
-    flex-direction: column;
+    padding: 1.5rem 1.25rem;
   }
 
   .services-header__alt {
@@ -2089,16 +2131,20 @@ $ani-delay: 1s;
   }
 
   .director-grid__item {
-    height: 150px;
+    height: 240px;
   }
 
   .director-grid__item-hover {
-    height: 150px;
+    height: 240px;
   }
 
   .director-grid__item-hover {
     display: none;
     height: 0;
+  }
+
+  .director-grid__item:hover .director-grid__item-hover {
+    display: none;
   }
 
   .director-grid__item-hover {
