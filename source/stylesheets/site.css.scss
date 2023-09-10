@@ -478,8 +478,7 @@ path {
       }
 
       .video1 {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-          url("../images/bg-romay.png");
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -513,8 +512,7 @@ path {
       }
 
       .video2 {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-          url("../images/romay/cover-land.png");
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -533,14 +531,14 @@ path {
       }
 
       .video3 {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-          url("../images/romay/cover-prudential.png");
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         background-repeat: no-repeat;
         background-size: cover;
       }
 
       #video4 {
-        background: transparent no-repeat url("../images/romay/lampara.png");
+        background: transparent no-repeat
+          url("../images/romay/cover-segunda.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -553,8 +551,7 @@ path {
       }
 
       .video4 {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-          url("../images/romay/cover-segunda.png");
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -573,8 +570,7 @@ path {
       }
 
       .video5 {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-          url("../images/romay/cover-montana.png");
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -593,8 +589,7 @@ path {
       }
 
       .video6 {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-          url("../images/romay/telcel2.png");
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -1910,6 +1905,30 @@ path {
   background-size: cover;
 }
 
+.director-alex {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/mainGif2.gif")
+  );
+  background-size: cover;
+}
+
+.director-sava {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/sava.gif")
+  );
+  background-size: cover;
+}
+
+.director-tena {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/9.gif")
+  );
+  background-size: cover;
+}
+
 .director-grid__item:hover .director-grid__item-hover {
   display: flex;
 }
@@ -2148,18 +2167,16 @@ $ani-delay: 1s;
   }
 
   .director-grid__item-hover {
-    background: rgba(0, 0, 0, 0.65);
-    height: 0;
-    position: inherit;
-    width: 0;
-    display: none;
+    background: rgba(0, 0, 0, 0.15);
+    height: 240px;
+    position: absolute;
+    width: 100%;
+    display: flex;
 
     h5 {
-      display: none;
     }
 
     img {
-      display: none;
     }
   }
 
