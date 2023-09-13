@@ -299,6 +299,7 @@ path {
   }
 
   &-list {
+    margin-top: 75px;
     h3 {
       font-size: 3.6vw;
       font-weight: 300;
@@ -2264,10 +2265,6 @@ $ani-delay: 1s;
   .services-header__alt {
     position: relative;
     left: auto;
-  }
-
-  .services-list {
-    margin-top: 75px;
   }
 
   .services-list h3 {
