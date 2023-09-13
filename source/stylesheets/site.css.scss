@@ -1053,7 +1053,7 @@ path {
       }
 
       #tena5 {
-        background: transparent no-repeat url("../images/tena/mtv.png");
+        background: transparent no-repeat url("../images/tena/neutrogena3.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1066,7 +1066,7 @@ path {
       }
 
       #tena6 {
-        background: transparent no-repeat url("../images/tena/aguila.png");
+        background: transparent no-repeat url("../images/tena/neutrogena4.png");
         background-size: cover;
         width: 100%;
         background-position: center;
@@ -1893,6 +1893,78 @@ path {
           outline: none;
         }
       }
+      #pipe1 {
+        background: transparent no-repeat url("../images/pipe/hsbc.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pipe2 {
+        background: transparent no-repeat url("../images/pipe/diablito.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pipe3 {
+        background: transparent no-repeat url("../images/pipe/citibanamex.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pipe4 {
+        background: transparent no-repeat url("../images/pipe/banorte.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pipe5 {
+        background: transparent no-repeat url("../images/pipe/citibanamex2.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pipe6 {
+        background: transparent no-repeat url("../images/pipe/colgate.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
     }
   }
 }
@@ -1925,6 +1997,70 @@ path {
   background: (
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("/images/9.gif")
+  );
+  background-size: cover;
+}
+
+.director-hugo {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/hugo.gif")
+  );
+  background-size: cover;
+}
+
+.director-malet {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/4.gif")
+  );
+  background-size: cover;
+}
+
+.director-lubezki {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/1.gif")
+  );
+  background-size: cover;
+}
+
+.director-prada {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/prada.gif")
+  );
+  background-size: cover;
+}
+
+.director-casanova {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/12.gif")
+  );
+  background-size: cover;
+}
+
+.director-pollo {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/pollo.gif")
+  );
+  background-size: cover;
+}
+
+.director-green {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/8.gif")
+  );
+  background-size: cover;
+}
+
+.director-pipe {
+  background: (
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/images/pipe.gif")
   );
   background-size: cover;
 }
