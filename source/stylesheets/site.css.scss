@@ -2051,6 +2051,7 @@ path {
   &-grid-single {
     max-width: 700px !important;
     grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
   }
 }
 
