@@ -2507,6 +2507,7 @@ $ani-delay: 1s;
   border-radius: 2px;
   animation: jumpInfinite 1.5s infinite;
   border-color: orange;
+  z-index: 9;
 }
 
 .down-arrow:after {
