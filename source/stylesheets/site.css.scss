@@ -460,11 +460,11 @@ path {
       cursor: pointer;
       display: flex;
       position: relative;
-      height: 350px;
+      height: 450px;
 
       &-hover {
         background: rgba(0, 0, 0, 0.65);
-        height: 350px;
+        height: 450px;
         position: absolute;
         width: 100%;
         flex-direction: column;
