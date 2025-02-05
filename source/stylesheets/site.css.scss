@@ -1973,6 +1973,90 @@ path {
           outline: none;
         }
       }
+      #pipe6 {
+        background: transparent no-repeat url("../images/pipe/aeromexico.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prat1 {
+        background: transparent no-repeat url("../images/prat/abc.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prat2 {
+        background: transparent no-repeat url("../images/prat/loto.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prat3 {
+        background: transparent no-repeat url("../images/prat/saladitas.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prat4 {
+        background: transparent no-repeat url("../images/prat/renault.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prat5 {
+        background: transparent no-repeat url("../images/prat/aperol.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #prat6 {
+        background: transparent no-repeat url("../images/prat/toyota.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
       #lorena1 {
         background: transparent no-repeat url("../images/lorena/bestbuy.png");
         background-size: cover;
