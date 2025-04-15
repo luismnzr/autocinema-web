@@ -1900,6 +1900,30 @@ path {
           outline: none;
         }
       }
+      #sava7 {
+        background: transparent no-repeat url("../images/sava/chirey.jpg");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #sava7 {
+        background: transparent no-repeat url("../images/sava/smirnoff.jpg");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
       #pipe1 {
         background: transparent no-repeat url("../images/pipe/hsbc.png");
         background-size: cover;
@@ -1972,8 +1996,20 @@ path {
           outline: none;
         }
       }
-      #pipe6 {
-        background: transparent no-repeat url("../images/pipe/aeromexico.png");
+      #pipe7 {
+        background: transparent no-repeat url("../images/pipe/aeromexico.jpg");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #pipe8 {
+        background: transparent no-repeat url("../images/pipe/allianz.jpg");
         background-size: cover;
         width: 100%;
         background-position: center;
