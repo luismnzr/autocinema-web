@@ -1912,8 +1912,81 @@ path {
           outline: none;
         }
       }
-      #sava7 {
+      #sava8 {
         background: transparent no-repeat url("../images/sava/smirnoff.jpg");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #arzate1 {
+        background: transparent no-repeat url("../images/arzate/costena.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #arzate2 {
+        background: transparent no-repeat url("../images/arzate/uber.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #arzate3 {
+        background: transparent no-repeat url("../images/arzate/bbva.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #arzate4 {
+        background: transparent no-repeat url("../images/arzate/nutrisse.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #arzate5 {
+        background: transparent no-repeat url("../images/arzate/univision.png");
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        object-fit: cover;
+
+        &:focus {
+          background: none !important;
+          outline: none;
+        }
+      }
+      #arzate6 {
+        background: transparent no-repeat
+          url("../images/arzate/costena_elementos.png");
         background-size: cover;
         width: 100%;
         background-position: center;
