@@ -1,0 +1,152 @@
+---
+title: Pollo | Autocinema Ink
+---
+<div class="down-arrow"></div>
+<div class="services-header animated fadeInDown">
+  <p style="text-align: left;"><a class="services-header__link" href="/#proyectos"><span><img height="12" src="/images/back.svg" alt="Autocinema Ink"></span> Go Back</a></p>
+  <p><a class="mainLinkFooter animated fadeIn" href="/"><img src="/images/logo-icon@2x.png" alt="Autocinema Ink"></a></p>
+  <p style="text-align: right;">
+      <a class="services-header__link" href="mailto:info@autocinemaink.com">info@autocinemaink.com</a>
+      <br>
+      <a class="services-header__link" href="https://instagram.com/autocinemaink">@autocinemaink</a>
+  </p>
+</div>
+<div class="director-subheader director-pollo">
+  <h3 class="animated fadeInDown delay-1s">Pollo</h3>
+</div>
+<div class="director">
+  <div id="desktopGrid" class="director-grid animated fadeIn delay-2s">
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover pollo5 vimeo-launch" data-vimeo-id="769570623">
+        <h5>Volkswagen</h5>
+        <br>
+        <p>Día del Padre</p>
+      </div>
+      <div id="pollo5" class="pollo-5">
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover pollo2 vimeo-launch" data-vimeo-id="769571287">
+        <h5>Smart</h5>
+        <br>
+        <p>Cámara de Seguridad</p>
+      </div>
+      <div id="pollo2" class="pollo-2">
+      </div>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover pollo3 vimeo-launch" data-vimeo-id="769571039">
+        <h5>Audi</h5>
+        <br>
+        <p>Emotion Charger</p>
+      </div>
+      <div id="pollo3" class="pollo-3">
+      </div>
+    </div>
+  </div>
+
+  <div id="mobileGrid" class="director-grid animated fadeIn delay-2s">
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Volkswagen</h5>
+        <br>
+        <p>Día del Padre</p>
+      </div>
+      <video id="pollo5" class="pollo-5" onclick="this.controls=true" src="https://player.vimeo.com/progressive_redirect/playback/769570623/rendition/720p/file.mp4?loc=external&signature=fd372b5c48e2f99c5197caabc7cee29265a217d2a05c08bcfb827e1d41068022" poster="data:image/gif,AAAA"></video>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Smart</h5>
+        <br>
+        <p>Cámara de Seguridad</p>
+      </div>
+      <video id="pollo2" class="pollo-2" onclick="this.controls=true" src="https://player.vimeo.com/progressive_redirect/playback/769571287/rendition/720p/file.mp4?loc=external&signature=fe56392d301ccba6d1b31e10307cea2471ac40daaf1567ea411e8e5cd04cd6a1"  poster="data:image/gif,AAAA"></video>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>Audi</h5>
+        <br>
+        <p>Emotion Charger</p>
+      </div>
+      <video id="pollo3" class="pollo-3" onclick="this.controls=true" src="https://player.vimeo.com/progressive_redirect/playback/769571039/rendition/720p/file.mp4?loc=external&signature=4d8863f90b7bfd72cb065f08f093bd8d524b9b5b9967286f6cd9b38c608affcc" poster="data:image/gif,AAAA"></video>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>ALDABA/AMERICAN EXPRESS</h5>
+        <br>
+        <p>Nails</p>
+      </div>
+      <video id="pollo4" class="pollo-4" onclick="this.controls=true" src="https://player.vimeo.com/progressive_redirect/playback/769571003/rendition/540p/file.mp4?loc=external&signature=da8e103e3175091c406d3d8da8a148883637f365c0eecf71a2745749ed4d4a72" poster="data:image/gif,AAAA"></video>
+    </div>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5>American Express</h5>
+        <br>
+        <p>Gym</p>
+      </div>
+      <video id="pollo1" class="pollo-1" onclick="this.controls=true" src="https://player.vimeo.com/progressive_redirect/playback/769582158/rendition/1080p/file.mp4?loc=external&signature=073a7b76299c1910b6fdc0fb70474330e041682563939e7f7545fd654f4284b2" poster="data:image/gif,AAAA"></video>
+    </div>
+
+  </div>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $('body')
+  .on('click', '.vimeo-launch', function () {
+    var videoID = $(this).data('vimeo-id'),
+        $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/' + videoID + '/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+    $('body').append($video);
+  } )
+
+  .on('click', '.vimeo-close', function () {
+    $(this).addClass('closing');
+
+    $('#vimeo-pop-container').delay(700).animate({
+      height: 0,
+      top: '50%'
+    }, 'fast', function () {
+      $('#vimeo-pop-container').remove();
+    });
+  } );
+  </script>
+
+<!-- <script type="text/javascript">
+  $(document).ready(function(){
+      $('#hari1').click(function(){
+        .setAttribute("poster"," ");
+        .css("background","none");
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+      });
+      $('#hari2').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+      $('#hari3').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+      $('#hari4').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+      $('#hari5').click(function(){
+         $(this).get(0).played ? $(this).get(0).pause() : $(this).get(0).play();
+         .setAttribute("controls","controls");
+         .setAttribute("poster"," ");
+         .css("background","none");
+      });
+   });
+</script> -->
