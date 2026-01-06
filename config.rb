@@ -5,10 +5,6 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-# Enable Data Files
-# https://middlemanapp.com/advanced/data-files/
-# This allows us to use data from YAML files in /data/directors/
-
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -23,12 +19,13 @@ page '/*.txt', layout: false
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
-# Generate director pages dynamically from YAML data
-data.directors.each do |slug, director|
-  proxy "/#{director.slug}/index.html", "/director-template.html",
-    locals: { director: director },
-    ignore: true
-end
+# proxy(
+#   '/this-page-has-no-template.html',
+#   '/template-file.html',
+#   locals: {
+#     which_fake_page: 'Rendering a fake page with a local variable'
+#   },
+# )
 
 # Helpers
 # Methods defined in the helpers block are available in templates
