@@ -1,0 +1,14 @@
+---
+name: "Álex de la Iglesia"
+slug: "alex-de-la-iglesia"
+display_name: "Álex de la Iglesia"
+css_class: "director-alex"
+hover_gif: "/images/mainGif2.gif"
+order: 1
+enabled: true
+videos:
+  - title: "Alex de la Iglesia"
+    vimeo_id: "578114423"
+    category: "Reel Publicitario"
+    mobile_url: "https://player.vimeo.com/external/578114423.hd.mp4?s=5a4375106c188c7d347512dc47a91e4868b6d616&profile_id=175"
+    css_class: "iglesia-1"

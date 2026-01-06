@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: claude/admin-content-panel-eocVf # Production branch
+
+# Para desarrollo local, descomenta esta línea y comenta la configuración de arriba:
+# local_backend: true
+
+# Configura el path para publicar (Git commits)
+publish_mode: editorial_workflow
+
+# Configuración de media (imágenes, GIFs, etc.)
+media_folder: "source/images"
+public_folder: "/images"
+
+# Colecciones
+collections:
+  # Colección de Directores
+  - name: "directors"
+    label: "Directores"
+    label_singular: "Director"
+    folder: "data/directors"
+    create: true
+    slug: "{{slug}}"
+    extension: "yml"
+    format: "yml"
+    editor:
+      preview: false
+    fields:
+      - { label: "Nombre", name: "name", widget: "string", required: true }
+      - { label: "Slug (URL)", name: "slug", widget: "string", required: true, hint: "Ejemplo: alejandro-lubezki (sin espacios, minúsculas)" }
+      - { label: "Nombre a Mostrar", name: "display_name", widget: "string", required: true }
+      - { label: "Clase CSS", name: "css_class", widget: "string", required: true, hint: "Ejemplo: director-lubezki" }
+      - { label: "GIF de Hover", name: "hover_gif", widget: "image", required: true, hint: "Selecciona o sube el GIF que aparece al hacer hover" }
+      - { label: "Orden", name: "order", widget: "number", required: true, min: 1, hint: "Orden en la lista de directores (1 = primero)" }
+      - { label: "Habilitado", name: "enabled", widget: "boolean", default: true, required: true }
+      - label: "Videos"
+        name: "videos"
+        widget: "list"
+        required: false
+        summary: "{{fields.title}} - {{fields.category}}"
+        fields:
+          - { label: "Título", name: "title", widget: "string", required: true }
+          - { label: "Vimeo ID", name: "vimeo_id", widget: "string", required: true, hint: "Solo el ID del video de Vimeo" }
+          - { label: "Categoría/Subtítulo", name: "category", widget: "string", required: false }
+          - { label: "URL Móvil", name: "mobile_url", widget: "string", required: true, hint: "URL completa del video para móvil" }
+          - { label: "Clase CSS", name: "css_class", widget: "string", required: true, hint: "Ejemplo: lubezki-1" }

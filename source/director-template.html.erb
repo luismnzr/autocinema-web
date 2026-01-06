@@ -1,0 +1,72 @@
+---
+title: <%= director.name %> | Autocinema Ink
+---
+<div class="down-arrow"></div>
+<div class="services-header animated fadeInDown">
+  <p style="text-align: left;"><a class="services-header__link" href="/#proyectos"><span><img height="12" src="/images/back.svg" alt="Autocinema Ink"></span> Go Back</a></p>
+  <p><a class="mainLinkFooter animated fadeIn" href="/"><img src="/images/logo-icon@2x.png" alt="Autocinema Ink"></a></p>
+  <p style="text-align: right;">
+      <a class="services-header__link" href="mailto:info@autocinemaink.com">info@autocinemaink.com</a>
+      <br>
+      <a class="services-header__link" href="https://instagram.com/autocinemaink">@autocinemaink</a>
+  </p>
+</div>
+<div class="director-subheader <%= director.css_class %>">
+  <h3 class="animated fadeInDown delay-1s"><%= director.display_name %></h3>
+</div>
+<div class="director">
+  <div id="desktopGrid" class="director-grid animated fadeIn delay-2s">
+    <% director.videos.each_with_index do |video, index| %>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover <%= video.css_class %> vimeo-launch" data-vimeo-id="<%= video.vimeo_id %>">
+        <h5><%= video.title %></h5>
+        <% if video.category && video.category != "" %>
+        <br>
+        <p><%= video.category %></p>
+        <% end %>
+      </div>
+      <div id="<%= video.css_class %>" class="<%= video.css_class %>"></div>
+    </div>
+    <% end %>
+  </div>
+
+  <div id="mobileGrid" class="director-grid animated fadeIn delay-2s">
+    <% director.videos.each_with_index do |video, index| %>
+    <div class="director-grid__item">
+      <div class="director-grid__item-hover">
+        <h5><%= video.title %></h5>
+        <% if video.category && video.category != "" %>
+        <br>
+        <p><%= video.category %></p>
+        <% end %>
+      </div>
+      <video id="<%= video.css_class %>" class="<%= video.css_class %>" onclick="this.controls=true" src="<%= video.mobile_url %>" poster="data:image/gif,AAAA"></video>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  $('body')
+.on('click', '.vimeo-launch', function () {
+  var videoID = $(this).data('vimeo-id'),
+      $video = '<div id="vimeo-pop-container"><div><span class="vimeo-close"></span><iframe src="https://player.vimeo.com/video/' + videoID + '/?title=1&amp;byline=1&amp;portrait=0&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>';
+  $('body').append($video);
+} )
+
+.on('click', '.vimeo-close', function () {
+  $(this).addClass('closing');
+
+  $('#vimeo-pop-container').delay(700).animate({
+    height: 0,
+    top: '50%'
+  }, 'fast', function () {
+    $('#vimeo-pop-container').remove();
+  });
+} );
+</script>

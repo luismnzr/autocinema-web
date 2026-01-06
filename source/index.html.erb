@@ -122,59 +122,89 @@ title: Autocinema Ink
   </div>
 	<div class="section" data-anchor="proyectos">
 		<div class="projects">
+			<%# Load and sort directors from YAML data %>
+			<% directors = data.directors.values.select { |d| d.enabled }.sort_by { |d| d.order } %>
+
+			<%# Create ID mapping for JS hover effects %>
+			<% id_map = {
+				"alex-de-la-iglesia" => "alexIglesia",
+				"david-romay" => "davidRomay",
+				"pipe-ybarra" => "pipe",
+				"hugo-menduina" => "hugoMenduina",
+				"lorena-de-la-teja" => "lorenaTeja",
+				"prat" => "prat",
+				"alejandro-lubezki" => "alejandroLubezki",
+				"hermanos-prada" => "hermanosPrada",
+				"eduardo-casanova" => "eduardoCasanova",
+				"pollo" => "pollo",
+				"arzate" => "arzate",
+				"callan-green" => "callanGreen"
+			} %>
+
 			<div class="projects-list">
 				<div class="projects-list__row">
 					<ul class="projects-list__rowTop">
-						<li id="alexIglesia"><a href="/alex-de-la-iglesia">Álex de la Iglesia</a></li>
-						<li id="davidRomay" style="margin: 0 50px;"><a href="/david-romay">David Romay</a></li>
-						<li id="pipe"><a href="/pipe-ybarra">Pipe Ybarra</a></li>
+						<% directors[0..2].each_with_index do |director, index| %>
+						<li id="<%= id_map[director.slug] %>" <%= 'style="margin: 0 50px;"' if index == 1 %>>
+							<a href="/<%= director.slug %>"><%= director.display_name %></a>
+						</li>
+						<% end %>
 					</ul>
 				</div>
 				<div class="projects-list__row">
 					<ul>
-						<li id="hugoMenduina"><a href="/hugo-menduina">Hugo Menduiña</a></li>
-						<li id="lorenaTeja"><a href="/lorena-de-la-teja">Lorena de la Teja</a></li>
-						<li id="prat"><a href="/prat">Prat</a></li>
-						<li id="alejandroLubezki"><a href="/alejandro-lubezki">Ale Lubezki</a></li>
-						<li id="hermanosPrada"><a href="/hermanos-prada">Hermanos Prada</a></li>
+						<% directors[3..7].each do |director| %>
+						<li id="<%= id_map[director.slug] %>">
+							<a href="/<%= director.slug %>"><%= director.display_name %></a>
+						</li>
+						<% end %>
 					</ul>
 				</div>
 				<div class="projects-list__row">
 					<ul>
-						<li id="eduardoCasanova"><a href="/eduardo-casanova">Eduardo Casanova</a></li>
-						<li id="pollo"><a href="/pollo">Pollo</a></li>
-						<li id="arzate"><a href="/arzate">Arzate</a></li>
-						<li id="callanGreen"><a href="/callan-green">Callan Green</a></li>
+						<% directors[8..11].each do |director| %>
+						<li id="<%= id_map[director.slug] %>">
+							<a href="/<%= director.slug %>"><%= director.display_name %></a>
+						</li>
+						<% end %>
 					</ul>
 				</div>
 			</div>
 			<div class="projects-list__responsive">
 				<div class="projects-list__row">
 					<ul>
-					<li id="alexIglesia"><a href="/alex-de-la-iglesia">Álex de la Iglesia</a></li>
-						<li id="davidRomay"><a href="/david-romay">David Romay</a></li>
+						<% directors[0..1].each do |director| %>
+						<li id="<%= id_map[director.slug] %>">
+							<a href="/<%= director.slug %>"><%= director.display_name %></a>
+						</li>
+						<% end %>
 					</ul>
 				</div>
 				<div class="projects-list__row">
-						<ul>
-							<li id="pipe"><a href="/pipe-ybarra">Pipe Ybarra</a></li>
-							<li id="hugoMenduina"><a href="/hugo-menduina">Hugo Menduiña</a></li>
-							<li id="lorenaTeja"><a href="/lorena-de-la-teja">Lorena de la Teja</a></li>
-						</ul>
-				</div>
-				<div class="projects-list__row">
-						<ul>
-							<li id="prat"><a href="/prat">Prat</a></li>
-							<li id="alejandroLubezki"><a href="/alejandro-lubezki">Ale Lubezki</a></li>
-							<li id="hermanosPrada"><a href="/hermanos-prada">Hermanos Prada</a></li>
-							<li id="eduardoCasanova"><a href="/eduardo-casanova">Eduardo Casanova</a></li>
-						</ul>
+					<ul>
+						<% directors[2..4].each do |director| %>
+						<li id="<%= id_map[director.slug] %>">
+							<a href="/<%= director.slug %>"><%= director.display_name %></a>
+						</li>
+						<% end %>
+					</ul>
 				</div>
 				<div class="projects-list__row">
 					<ul>
-						<li id="pollo"><a href="/pollo">Pollo</a></li>
-						<li id="arzate"><a href="/matias-malet">Arzate</a></li>
-						<li id="callanGreen"><a href="/callan-green">Callan Green</a></li>
+						<% directors[5..8].each do |director| %>
+						<li id="<%= id_map[director.slug] %>">
+							<a href="/<%= director.slug %>"><%= director.display_name %></a>
+						</li>
+						<% end %>
+					</ul>
+				</div>
+				<div class="projects-list__row">
+					<ul>
+						<% directors[9..11].each do |director| %>
+						<li id="<%= id_map[director.slug] %>">
+							<a href="/<%= director.slug %>"><%= director.display_name %></a>
+						</li>
+						<% end %>
 					</ul>
 				</div>
 
@@ -202,64 +232,13 @@ title: Autocinema Ink
 
 <script type="text/javascript">
 	$(document).ready(function(){
-	$("#alexIglesia").hover(function(){
-        $('.projects').css("background", "url('./images/mainGif2.gif')");
-    });
-    $("#davidRomay").hover(function(){
-        $('.projects').css("background", "url('./images/2.gif')");
-    });
-		$("#alejandroLubezki").hover(function(){
-				$('.projects').css("background", "url('./images/1.gif')");
+		<%# Generate hover effects dynamically from director data %>
+		<% directors.each do |director| %>
+		$("#<%= id_map[director.slug] %>").hover(function(){
+			$('.projects').css("background", "url('<%= director.hover_gif %>')");
 		});
-		$("#hariRomay").hover(function(){
-				$('.projects').css("background", "url('./images/3.gif')");
-		});
-		$("#javieraEyzaguirre").hover(function(){
-        $('.projects').css("background", "url('./images/6.gif')");
-    });
-		$("#callanGreen").hover(function(){
-				$('.projects').css("background", "url('./images/8.gif')");
-		});
-		$("#matiasMalet").hover(function(){
-				$('.projects').css("background", "url('./images/4.gif')");
-		});
-		$("#ericMejia").hover(function(){
-				$('.projects').css("background", "url('./images/7.gif')");
-		});
-		$("#pabloMaiola").hover(function(){
-				$('.projects').css("background", "url('./images/5.gif')");
-		});
-		$("#danielaTena").hover(function(){
-				$('.projects').css("background", "url('./images/9.gif')");
-		});
-		$("#hernanAlmar").hover(function(){
-				$('.projects').css("background", "url('./images/11.gif')");
-		});
-		$("#eduardoCasanova").hover(function(){
-				$('.projects').css("background", "url('./images/12.gif')");
-		});
-		$("#hugoMenduina").hover(function(){
-				$('.projects').css("background", "url('./images/hugo.gif')");
-		});
-		$("#hermanosPrada").hover(function(){
-				$('.projects').css("background", "url('./images/prada.gif')");
-		});
-		$("#pollo").hover(function(){
-				$('.projects').css("background", "url('./images/pollo.gif')");
-		});
-
-		$("#sava").hover(function(){
-				$('.projects').css("background", "url('./images/sava.gif')");
-		});
-
-		$("#pipe").hover(function(){
-				$('.projects').css("background", "url('./images/pipe.gif')");
-		});
-
-		$("#lorenaTeja").hover(function(){
-				$('.projects').css("background", "url('./images/lorena.gif')");
-		});
-});
+		<% end %>
+	});
 </script>
 
 <script type="text/javascript">
