@@ -21,23 +21,87 @@ Se ha implementado un **Panel de Administración** usando **Decap CMS** para ges
 - `index.html.erb`: Lista de directores generada dinámicamente desde los datos YAML
 - Se eliminaron 12 archivos HTML hardcodeados y se reemplazaron con 1 template dinámico
 
+## Cómo Iniciar el Servidor (IMPORTANTE)
+
+### Inicio Rápido
+
+```bash
+./start-server.sh
+```
+
+Esto iniciará el servidor con la configuración correcta de encoding UTF-8.
+
+### O manualmente:
+
+```bash
+RUBYOPT="-Eutf-8:utf-8" bundle exec middleman server
+```
+
+**IMPORTANTE**: Es necesario usar `RUBYOPT="-Eutf-8:utf-8"` porque el proyecto contiene caracteres en español (acentos, ñ, etc.) y Ruby por defecto usa ASCII.
+
+### Acceder al sitio:
+
+- **Sitio web**: http://localhost:4567
+- **Panel admin**: http://localhost:4567/admin
+
+## Solución de Problemas Comunes
+
+### Error: "invalid byte sequence in US-ASCII"
+
+**Causa**: Ruby está intentando procesar archivos con caracteres en español usando encoding ASCII.
+
+**Solución**: Usa el script `./start-server.sh` o ejecuta:
+```bash
+RUBYOPT="-Eutf-8:utf-8" bundle exec middleman server
+```
+
+### Error: Problemas con la gema `ffi`
+
+**Causa**: Incompatibilidad entre Ruby 3.3.6 y versiones antiguas de gemas.
+
+**Solución** (ya aplicada):
+```bash
+# 1. Instalar Bundler compatible
+gem install bundler -v '~> 2.5.0'
+gem uninstall bundler -v 4.0.1
+
+# 2. Actualizar dependencias
+bundle update --all
+bundle install
+```
+
+### Error: "command not found: middleman"
+
+**Solución**:
+```bash
+bundle install
+```
+
 ## Cómo Usar el Panel de Administración
 
 ### Acceso Local (Desarrollo)
 
-1. **Habilitar backend local** en `/source/admin/config.yml`:
-   ```yaml
-   local_backend: true
-   ```
-
-2. **Instalar Decap CMS Proxy**:
+1. **Iniciar el servidor** (ver sección anterior):
    ```bash
-   npx decap-server
+   ./start-server.sh
    ```
 
-3. **Acceder al panel**:
-   - Abrir `http://localhost:4567/admin` (después de correr `middleman server`)
-   - Iniciar sesión (en modo local no requiere autenticación)
+2. **Acceder al panel**:
+   - Abrir `http://localhost:4567/admin`
+
+3. **Modo local sin autenticación** (opcional):
+   - Editar `/source/admin/config.yml` y descomentar:
+     ```yaml
+     local_backend: true
+     ```
+   - Instalar Decap CMS Proxy:
+     ```bash
+     npx decap-server
+     ```
+   - En otra terminal, iniciar Middleman:
+     ```bash
+     ./start-server.sh
+     ```
 
 ### Acceso en Producción
 
